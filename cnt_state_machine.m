@@ -1,7 +1,7 @@
 
 function [en_filter_wr_address_cntr, en_template_cntr, rst_template_acc, ld_template_cntr, en_filter_cntr, rst_filter_acc, filt_data_RAM_en,... 
     filt_data_RAM_wr, ld_filter_cntr, start_add_cntr_en, sample_skip_cntr_en, sample_skip_cntr_ld] = ...
-        cnt_state_machine(new_sample_available, template_cnt, template_size, filter_length, filter_cntr, samples_to_skip, sample_skip_cntr)
+        cnt_state_machine(new_sample_available, template_cnt, template_size, filter_length, filter_cntr, sample_skip_cntr)
 %UNTITLED Summary of this function goes here
 %   Finite state machine to control the math
 % THis program controls the process of doing a pattern match. The pattern
@@ -44,14 +44,14 @@ switch double(the_state)
             en_filter_wr_address_cntr = 0;
         else                             % we have a new sample..start
             next_state = 1;
-            en_template_cntr = 0;           % no template counting
+            en_template_cntr = 1;           % no template counting
+            ld_template_cntr = 1;
             rst_template_acc = 1;            % accumulator is reset
-            ld_template_cntr = 0;
-            en_filter_cntr = 1; 
+            en_filter_cntr = 1;
+            ld_filter_cntr = 1;
             rst_filter_acc = 1;
             filt_data_RAM_en = 0;
             filt_data_RAM_wr = 0;
-            ld_filter_cntr = 1;
             start_add_cntr_en = 0;
             sample_skip_cntr_en = 0;
             sample_skip_cntr_ld = 0;
@@ -75,7 +75,7 @@ switch double(the_state)
         else                            % decimated sample, decrement the skip counter and go wait for next sample
             sample_skip_cntr_en = 1;        %decrement the skip counter
             sample_skip_cntr_ld = 0;        % do not reload it
-            next_state = 0;                 % go back and wait for next sample
+            next_state = 20;                 % go back and wait for next sample
             en_template_cntr = 0;            % load and reset the counters
             rst_template_acc = 1;
             ld_template_cntr = 0;
@@ -137,7 +137,7 @@ switch double(the_state)
         rst_template_acc = 1;
         ld_template_cntr = 0;
         en_filter_cntr = 1; 
-        rst_filter_acc = 0;
+        rst_filter_acc = 1;
         filt_data_RAM_en = 0;
         filt_data_RAM_wr = 0;
         ld_filter_cntr = 0;
@@ -196,7 +196,7 @@ switch double(the_state)
         ld_template_cntr = 0;
         en_filter_cntr = 0; 
         rst_filter_acc = 0;
-        filt_data_RAM_en = 1;
+        filt_data_RAM_en = 0;
         filt_data_RAM_wr = 0;
         ld_filter_cntr = 0;
         start_add_cntr_en = 0;
@@ -211,7 +211,7 @@ switch double(the_state)
         en_filter_cntr = 0; 
         rst_filter_acc = 0;
         filt_data_RAM_en = 1;
-        filt_data_RAM_wr = 1;                % write the filtered sample
+        filt_data_RAM_wr = 0;                % write the filtered sample
         ld_filter_cntr = 0;
         start_add_cntr_en = 0;
         en_filter_wr_address_cntr = 0;
@@ -224,8 +224,8 @@ switch double(the_state)
         ld_template_cntr = 0;
         en_filter_cntr = 0; 
         rst_filter_acc = 1;
-        filt_data_RAM_en = 0;           
-        filt_data_RAM_wr = 0;          
+        filt_data_RAM_en = 1;           
+        filt_data_RAM_wr = 1;          
         ld_filter_cntr = 0;
         start_add_cntr_en = 0;
         en_filter_wr_address_cntr = 0;
@@ -234,7 +234,7 @@ switch double(the_state)
         next_state = 12;            % hold acc reset for 4 clocks
         sample_skip_cntr_en = 0;
         sample_skip_cntr_ld = 0;
-        en_template_cntr = 1;            
+        en_template_cntr = 0;            
         rst_template_acc = 1;
         ld_template_cntr = 0;
         en_filter_cntr = 0; 
@@ -279,7 +279,7 @@ switch double(the_state)
         sample_skip_cntr_en = 0;
         sample_skip_cntr_ld = 0;
         en_template_cntr = 1;           
-        rst_template_acc = 0;
+        rst_template_acc = 1;
         ld_template_cntr = 0;
         en_filter_cntr = 0; 
         rst_filter_acc = 1;
@@ -288,14 +288,29 @@ switch double(the_state)
         ld_filter_cntr = 0;
         start_add_cntr_en = 0;
         en_filter_wr_address_cntr = 0;
-    case 15  
+        
+    case 15
+        next_state = 16;            % hold acc reset for 4 clocks states
+        sample_skip_cntr_en = 0;
+        sample_skip_cntr_ld = 0;
+        en_template_cntr = 1;           
+        rst_template_acc = 1;
+        ld_template_cntr = 0;
+        en_filter_cntr = 0; 
+        rst_filter_acc = 1;
+        filt_data_RAM_en = 0;
+        filt_data_RAM_wr = 0;
+        ld_filter_cntr = 0;
+        start_add_cntr_en = 0;
+        en_filter_wr_address_cntr = 0;
+    case 16  
         if (double(template_cnt) == double(template_size))
-            next_state = 16;         % if done template
+            next_state = 17;         % if done template
             sample_skip_cntr_en = 0;
             sample_skip_cntr_ld = 0;
-            en_template_cntr = 1;            % continue counting to load next start address
+            en_template_cntr = 0;            % continue counting to load next start address
             rst_template_acc = 0;
-            ld_template_cntr = 1;
+            ld_template_cntr = 0;
             en_filter_cntr = 0; 
             rst_filter_acc = 1;
             filt_data_RAM_en = 0;
@@ -304,7 +319,7 @@ switch double(the_state)
             start_add_cntr_en = 0;
             en_filter_wr_address_cntr = 0;
         else 
-            next_state = 15;         % just keep counting and accumulating
+            next_state = 16;         % just keep counting and accumulating
             sample_skip_cntr_en = 0;
             sample_skip_cntr_ld = 0;
             en_template_cntr = 1;           
@@ -318,13 +333,13 @@ switch double(the_state)
             start_add_cntr_en = 0;
             en_filter_wr_address_cntr = 0;
         end
-    case 16
-        next_state= 17;                 % extend accumulator 4 cycles
+    case 17
+        next_state= 18;                 % extend accumulator 4 cycles
         sample_skip_cntr_en = 0;
         sample_skip_cntr_ld = 0;
-        en_template_cntr = 1;                  % for pipeline. states 16, 17, 18, 19
+        en_template_cntr = 0;                  % for pipeline. states 16, 17, 18, 19
         rst_template_acc = 0;                % dont reset accumulator
-        ld_template_cntr = 1;
+        ld_template_cntr = 0;
         en_filter_cntr = 0; 
         rst_filter_acc = 1;
         filt_data_RAM_en = 0;
@@ -332,8 +347,8 @@ switch double(the_state)
         ld_filter_cntr = 0;
         start_add_cntr_en = 0;
         en_filter_wr_address_cntr = 0;
-    case 17
-        next_state = 18;
+    case 18
+        next_state = 19;
         sample_skip_cntr_en = 0;
         sample_skip_cntr_ld = 0;
         en_template_cntr = 0;
@@ -346,8 +361,8 @@ switch double(the_state)
         ld_filter_cntr = 0;
         start_add_cntr_en = 0;
         en_filter_wr_address_cntr = 0;
-    case 18
-        next_state= 19;                 % extend accumulator 4 cycles
+    case 19
+        next_state= 20;                 % extend accumulator 4 cycles
         sample_skip_cntr_en = 0;
         sample_skip_cntr_ld = 0;
         en_template_cntr = 0;                  % for pipeline. states 7,8,9,10
@@ -360,8 +375,8 @@ switch double(the_state)
         ld_filter_cntr = 0;
         start_add_cntr_en = 0;
         en_filter_wr_address_cntr = 0;
-    case 19
-        next_state= 0;                 % extend accumulator 4 cycles
+    case 20
+        next_state= 21;                 % extend accumulator 4 cycles
         sample_skip_cntr_en = 0;
         sample_skip_cntr_ld = 0;
         en_template_cntr = 0;                  % for pipeline. states 7,8,9,10
@@ -374,6 +389,90 @@ switch double(the_state)
         ld_filter_cntr = 0;
         start_add_cntr_en = 1;
         en_filter_wr_address_cntr = 1;
+    case 21
+        next_state = 22;
+        en_template_cntr = 0;           % no template counting
+        rst_template_acc = 1;            % accumulator is reset
+        ld_template_cntr = 0;
+        en_filter_cntr = 0; 
+        rst_filter_acc = 1;
+        filt_data_RAM_en = 0;
+        filt_data_RAM_wr = 0;
+        ld_filter_cntr = 0;
+        start_add_cntr_en = 0;
+        sample_skip_cntr_en = 0;
+        sample_skip_cntr_ld = 0;
+        en_filter_wr_address_cntr = 0;
+    case 22
+        next_state = 23;
+        en_template_cntr = 0;           % no template counting
+        rst_template_acc = 1;            % accumulator is reset
+        ld_template_cntr = 0;
+        en_filter_cntr = 0; 
+        rst_filter_acc = 1;
+        filt_data_RAM_en = 0;
+        filt_data_RAM_wr = 0;
+        ld_filter_cntr = 0;
+        start_add_cntr_en = 0;
+        sample_skip_cntr_en = 0;
+        sample_skip_cntr_ld = 0;
+        en_filter_wr_address_cntr = 0;
+    case 23
+        next_state = 24;
+        en_template_cntr = 0;           % no template counting
+        rst_template_acc = 1;            % accumulator is reset
+        ld_template_cntr = 0;
+        en_filter_cntr = 0; 
+        rst_filter_acc = 1;
+        filt_data_RAM_en = 0;
+        filt_data_RAM_wr = 0;
+        ld_filter_cntr = 0;
+        start_add_cntr_en = 0;
+        sample_skip_cntr_en = 0;
+        sample_skip_cntr_ld = 0;
+        en_filter_wr_address_cntr = 0;
+    case 24
+        next_state = 25;
+        en_template_cntr = 0;           % no template counting
+        rst_template_acc = 1;            % accumulator is reset
+        ld_template_cntr = 0;
+        en_filter_cntr = 0; 
+        rst_filter_acc = 1;
+        filt_data_RAM_en = 0;
+        filt_data_RAM_wr = 0;
+        ld_filter_cntr = 0;
+        start_add_cntr_en = 0;
+        sample_skip_cntr_en = 0;
+        sample_skip_cntr_ld = 0;
+        en_filter_wr_address_cntr = 0;
+    case 25
+        next_state = 26;
+        en_template_cntr = 0;           % no template counting
+        rst_template_acc = 1;            % accumulator is reset
+        ld_template_cntr = 0;
+        en_filter_cntr = 0; 
+        rst_filter_acc = 1;
+        filt_data_RAM_en = 0;
+        filt_data_RAM_wr = 0;
+        ld_filter_cntr = 0;
+        start_add_cntr_en = 0;
+        sample_skip_cntr_en = 0;
+        sample_skip_cntr_ld = 0;
+        en_filter_wr_address_cntr = 0;
+    case 26
+        next_state = 0;
+        en_template_cntr = 0;           % no template counting
+        rst_template_acc = 1;            % accumulator is reset
+        ld_template_cntr = 0;
+        en_filter_cntr = 0; 
+        rst_filter_acc = 1;
+        filt_data_RAM_en = 0;
+        filt_data_RAM_wr = 0;
+        ld_filter_cntr = 0;
+        start_add_cntr_en = 0;
+        sample_skip_cntr_en = 0;
+        sample_skip_cntr_ld = 0;
+        en_filter_wr_address_cntr = 0;
     otherwise
         next_state = 0;
         sample_skip_cntr_en = 0;
