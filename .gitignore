@@ -1,0 +1,4 @@
+netlist/**
+*.log
+RTEphysEng.mdl.autosave
+RTEphysEng.mdl.original

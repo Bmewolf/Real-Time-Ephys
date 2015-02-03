@@ -400,7 +400,7 @@ switch double(the_state)
         en_filter_wr_address_cntr = 0; 
         latch_temp_accum = 0;
     case 20
-        next_state= 21;                 % extend accumulator 4 cycles
+        next_state = 0;                 % extend accumulator 4 cycles
         sample_skip_cntr_en = 0;
         sample_skip_cntr_ld = 0;
         en_template_cntr = 0;                  % for pipeline. states 7,8,9,10
@@ -414,96 +414,7 @@ switch double(the_state)
         start_add_cntr_en = 1;
         en_filter_wr_address_cntr = 1; 
         latch_temp_accum = 1;
-    case 21
-        next_state = 22;
-        en_template_cntr = 0;           % no template counting
-        rst_template_acc = 1;            % accumulator is reset
-        ld_template_cntr = 0;
-        en_filter_cntr = 0; 
-        rst_filter_acc = 1;
-        filt_data_RAM_en = 0;
-        filt_data_RAM_wr = 0;
-        ld_filter_cntr = 0;
-        start_add_cntr_en = 0;
-        sample_skip_cntr_en = 0;
-        sample_skip_cntr_ld = 0;
-        en_filter_wr_address_cntr = 0; 
-        latch_temp_accum = 0;
-    case 22
-        next_state = 23;
-        en_template_cntr = 0;           % no template counting
-        rst_template_acc = 1;            % accumulator is reset
-        ld_template_cntr = 0;
-        en_filter_cntr = 0; 
-        rst_filter_acc = 1;
-        filt_data_RAM_en = 0;
-        filt_data_RAM_wr = 0;
-        ld_filter_cntr = 0;
-        start_add_cntr_en = 0;
-        sample_skip_cntr_en = 0;
-        sample_skip_cntr_ld = 0;
-        en_filter_wr_address_cntr = 0; 
-        latch_temp_accum = 0;
-    case 23
-        next_state = 24;
-        en_template_cntr = 0;           % no template counting
-        rst_template_acc = 1;            % accumulator is reset
-        ld_template_cntr = 0;
-        en_filter_cntr = 0; 
-        rst_filter_acc = 1;
-        filt_data_RAM_en = 0;
-        filt_data_RAM_wr = 0;
-        ld_filter_cntr = 0;
-        start_add_cntr_en = 0;
-        sample_skip_cntr_en = 0;
-        sample_skip_cntr_ld = 0;
-        en_filter_wr_address_cntr = 0; 
-        latch_temp_accum = 0;
-    case 24
-        next_state = 25;
-        en_template_cntr = 0;           % no template counting
-        rst_template_acc = 1;            % accumulator is reset
-        ld_template_cntr = 0;
-        en_filter_cntr = 0; 
-        rst_filter_acc = 1;
-        filt_data_RAM_en = 0;
-        filt_data_RAM_wr = 0;
-        ld_filter_cntr = 0;
-        start_add_cntr_en = 0;
-        sample_skip_cntr_en = 0;
-        sample_skip_cntr_ld = 0;
-        en_filter_wr_address_cntr = 0; 
-        latch_temp_accum = 0;
-    case 25
-        next_state = 26;
-        en_template_cntr = 0;           % no template counting
-        rst_template_acc = 1;            % accumulator is reset
-        ld_template_cntr = 0;
-        en_filter_cntr = 0; 
-        rst_filter_acc = 1;
-        filt_data_RAM_en = 0;
-        filt_data_RAM_wr = 0;
-        ld_filter_cntr = 0;
-        start_add_cntr_en = 0;
-        sample_skip_cntr_en = 0;
-        sample_skip_cntr_ld = 0;
-        en_filter_wr_address_cntr = 0; 
-        latch_temp_accum = 0;
-    case 26
-        next_state = 0;
-        en_template_cntr = 0;           % no template counting
-        rst_template_acc = 1;            % accumulator is reset
-        ld_template_cntr = 0;
-        en_filter_cntr = 0; 
-        rst_filter_acc = 1;
-        filt_data_RAM_en = 0;
-        filt_data_RAM_wr = 0;
-        ld_filter_cntr = 0;
-        start_add_cntr_en = 0;
-        sample_skip_cntr_en = 0;
-        sample_skip_cntr_ld = 0;
-        en_filter_wr_address_cntr = 0; 
-        latch_temp_accum = 0;
+   
     otherwise
         next_state = 0;
         sample_skip_cntr_en = 0;
