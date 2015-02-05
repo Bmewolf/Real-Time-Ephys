@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.64"
+    ComputedModelVersion    "1.65"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -58,28 +58,16 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		2
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1457.0, 692.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [3157.5166625976558, 1100.6666666666663]
-	}
-	Object {
-	  $ObjectID		  7
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "160"
-	  Extents		  [1457.0, 692.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [469.75, 205.75000000000057]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		6
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1457.0, 692.0]
+	ZoomFactor		[1.5]
+	Offset			[2875.5166625976553, 981.3333333333336]
       }
     }
   }
@@ -89,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "pdw"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Feb 05 15:10:23 2015"
-  RTWModifiedTimeStamp	  345045780
-  ModelVersionFormat	  "1.%<AutoIncrement:64>"
+  LastModifiedDate	  "Thu Feb 05 15:23:31 2015"
+  RTWModifiedTimeStamp	  345050413
+  ModelVersionFormat	  "1.%<AutoIncrement:65>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -126,7 +114,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    8
+    $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "RTEphysEng"
     overrideMode_	    [0.0]
@@ -185,13 +173,13 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      9
+      $ObjectID		      8
       Version		      "1.12.1"
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  10
+	  $ObjectID		  9
 	  Version		  "1.12.1"
 	  StartTime		  "0.0"
 	  StopTime		  ".0002"
@@ -226,7 +214,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  11
+	  $ObjectID		  10
 	  Version		  "1.12.1"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -258,7 +246,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  12
+	  $ObjectID		  11
 	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
@@ -314,7 +302,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  13
+	  $ObjectID		  12
 	  Version		  "1.12.1"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -404,7 +392,7 @@ Model {
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  14
+	  $ObjectID		  13
 	  Version		  "1.12.1"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -441,7 +429,7 @@ Model {
 	  ProdEqTarget		  on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  15
+	  $ObjectID		  14
 	  Version		  "1.12.1"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -456,7 +444,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  16
+	  $ObjectID		  15
 	  Version		  "1.12.1"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -471,7 +459,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  17
+	  $ObjectID		  16
 	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
@@ -540,7 +528,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      18
+	      $ObjectID		      17
 	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
@@ -608,7 +596,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      19
+	      $ObjectID		      18
 	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
@@ -688,7 +676,7 @@ Model {
 	  }
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  20
+	  $ObjectID		  19
 	  Version		  "1.12.1"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -710,11 +698,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    9
+    $ObjectID		    8
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    21
+    $ObjectID		    20
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -865,7 +853,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "150"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "215"
+    SIDHighWatermark	    "216"
     Block {
       BlockType		      Reference
       Name		      " System Generator"
@@ -937,6 +925,52 @@ Model {
       frac_width	      "24"
       quantization	      "Truncate"
       overflow		      "Wrap"
+      period		      "1"
+      dbl_ovrd		      off
+      timing_constraint	      "None"
+      locs_specified	      off
+      LOCs		      "{}"
+      UseAsADC		      off
+      ADCChannel	      "'1'"
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      inherit_from_input      off
+      hdl_port		      "on"
+      has_advanced_control    "0"
+      sggui_pos		      "-1,-1,-1,-1"
+      block_type	      "gatewayin"
+      sg_icon_stat	      "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 20 20 0 ],[0.95 0."
+      "93 0.65 ]);\nplot([0 65 65 0 0 ],[0 0 20 20 0 ]);\npatch([27.55 30.44 32.44 34.44 36.44 32.44 29.55 27.55 ],[12."
+      "22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([29.55 32.44 30.44 27.55 29.55 ],[10.22 10.22 1"
+      "2.22 12.22 10.22 ],[0.985 0.979 0.895 ]);\npatch([27.55 30.44 32.44 29.55 27.55 ],[8.22 8.22 10.22 10.22 8.22 ],"
+      "[1 1 1 ]);\npatch([29.55 36.44 34.44 32.44 30.44 27.55 29.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.97"
+      "9 0.895 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
+      "port_label('input',1,'\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfp"
+      "rintf('','COMMENT: end icon text');"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "AtoD_DataMem_Addr\n"
+      SID		      "214"
+      Ports		      [1, 1]
+      Position		      [3060, 1000, 3125, 1020]
+      ZOrder		      202
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/Gateway In"
+      SourceType	      "Xilinx Gateway In Block"
+      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, single, double and fixed-point to "
+      " Xilinx fixed-point or floating-point data type.<br><br>Hardware notes:  In hardware these blocks become top lev"
+      "el input ports."
+      gui_display_data_type   "Fixed-point"
+      arith_type	      "Unsigned"
+      n_bits		      "10"
+      bin_pt		      "0"
+      preci_type	      "Single"
+      exp_width		      "8"
+      frac_width	      "24"
+      quantization	      "Round  (unbiased: +/- Inf)"
+      overflow		      "Saturate"
       period		      "1"
       dbl_ovrd		      off
       timing_constraint	      "None"
@@ -1648,7 +1682,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		22
+	$ObjectID		21
 	$ClassName		"Simulink.Mask"
 	Type			"Xilinx EDK Processor Block"
 	Description		"Xilinx EDK Processor"
@@ -1672,7 +1706,7 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  36
 	  Object {
-	    $ObjectID		    23
+	    $ObjectID		    22
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -1687,7 +1721,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    24
+	    $ObjectID		    23
 	    Type		    "edit"
 	    Name		    "xmp"
 	    Prompt		    "XPS Project"
@@ -1695,7 +1729,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    25
+	    $ObjectID		    24
 	    Type		    "edit"
 	    Name		    "MemVisToProc"
 	    Prompt		    " "
@@ -1731,7 +1765,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    26
+	    $ObjectID		    25
 	    Type		    "edit"
 	    Name		    "AvailableMemories"
 	    Prompt		    "Available Memories"
@@ -1739,7 +1773,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    27
+	    $ObjectID		    26
 	    Type		    "edit"
 	    Name		    "portInterfaceTable"
 	    Prompt		    " "
@@ -1747,7 +1781,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    28
+	    $ObjectID		    27
 	    Type		    "edit"
 	    Name		    "bus_type_sgadvanced"
 	    Prompt		    " "
@@ -1756,7 +1790,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    29
+	    $ObjectID		    28
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -1771,7 +1805,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    30
+	    $ObjectID		    29
 	    Type		    "edit"
 	    Name		    "baseaddr"
 	    Prompt		    "Base Address"
@@ -1779,7 +1813,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    31
+	    $ObjectID		    30
 	    Type		    "edit"
 	    Name		    "baseaddr_lock_sgadvanced"
 	    Prompt		    " "
@@ -1788,14 +1822,14 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    32
+	    $ObjectID		    31
 	    Type		    "checkbox"
 	    Name		    "baseaddr_lock"
 	    Prompt		    "Lock"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    33
+	    $ObjectID		    32
 	    Type		    "edit"
 	    Name		    "dual_clock_sgadvanced"
 	    Prompt		    " "
@@ -1804,14 +1838,14 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    34
+	    $ObjectID		    33
 	    Type		    "checkbox"
 	    Name		    "dual_clock"
 	    Prompt		    "Dual Clocks"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    35
+	    $ObjectID		    34
 	    Type		    "edit"
 	    Name		    "reg_readback_sgadvanced"
 	    Prompt		    " "
@@ -1820,14 +1854,14 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    36
+	    $ObjectID		    35
 	    Type		    "checkbox"
 	    Name		    "reg_readback"
 	    Prompt		    "Register Read-Back"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    37
+	    $ObjectID		    36
 	    Type		    "edit"
 	    Name		    "ucf_file"
 	    Prompt		    "Constraint File"
@@ -1835,7 +1869,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    38
+	    $ObjectID		    37
 	    Type		    "edit"
 	    Name		    "inheritDeviceType_sgadvanced"
 	    Prompt		    " "
@@ -1844,14 +1878,14 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    39
+	    $ObjectID		    38
 	    Type		    "checkbox"
 	    Name		    "inheritDeviceType"
 	    Prompt		    "Inherit Device Type"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    40
+	    $ObjectID		    39
 	    Type		    "edit"
 	    Name		    "elf_file"
 	    Prompt		    "Initial Program"
@@ -1859,7 +1893,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    41
+	    $ObjectID		    40
 	    Type		    "edit"
 	    Name		    "codebug_sgadvanced"
 	    Prompt		    " "
@@ -1868,14 +1902,14 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    42
+	    $ObjectID		    41
 	    Type		    "checkbox"
 	    Name		    "codebug"
 	    Prompt		    "Enable Co-Debug with Xilinx SDK (Beta)"
 	    Value		    "on"
 	  }
 	  Object {
-	    $ObjectID		    43
+	    $ObjectID		    42
 	    Type		    "edit"
 	    Name		    "clock_name"
 	    Prompt		    " "
@@ -1884,7 +1918,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    44
+	    $ObjectID		    43
 	    Type		    "edit"
 	    Name		    "internalPortList"
 	    Prompt		    " "
@@ -1893,7 +1927,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    45
+	    $ObjectID		    44
 	    Type		    "edit"
 	    Name		    "resetPolarity"
 	    Prompt		    " "
@@ -1902,7 +1936,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    46
+	    $ObjectID		    45
 	    Type		    "edit"
 	    Name		    "memxtable"
 	    Prompt		    " "
@@ -1923,7 +1957,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    47
+	    $ObjectID		    46
 	    Type		    "edit"
 	    Name		    "procinfo"
 	    Prompt		    " "
@@ -1932,7 +1966,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    48
+	    $ObjectID		    47
 	    Type		    "edit"
 	    Name		    "memmapdirty"
 	    Prompt		    " "
@@ -1941,7 +1975,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    49
+	    $ObjectID		    48
 	    Type		    "edit"
 	    Name		    "blockname"
 	    Prompt		    " "
@@ -1950,7 +1984,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    50
+	    $ObjectID		    49
 	    Type		    "edit"
 	    Name		    "xpsintstyle"
 	    Prompt		    " "
@@ -1959,7 +1993,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    51
+	    $ObjectID		    50
 	    Type		    "edit"
 	    Name		    "has_advanced_control"
 	    Prompt		    " "
@@ -1967,7 +2001,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    52
+	    $ObjectID		    51
 	    Type		    "edit"
 	    Name		    "sggui_pos"
 	    Prompt		    " "
@@ -1976,7 +2010,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    53
+	    $ObjectID		    52
 	    Type		    "edit"
 	    Name		    "block_type"
 	    Prompt		    " "
@@ -1985,7 +2019,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    54
+	    $ObjectID		    53
 	    Type		    "edit"
 	    Name		    "block_version"
 	    Prompt		    " "
@@ -1994,7 +2028,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    55
+	    $ObjectID		    54
 	    Type		    "edit"
 	    Name		    "sg_icon_stat"
 	    Prompt		    " "
@@ -2003,7 +2037,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    56
+	    $ObjectID		    55
 	    Type		    "edit"
 	    Name		    "sg_mask_display"
 	    Prompt		    " "
@@ -2018,7 +2052,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    57
+	    $ObjectID		    56
 	    Type		    "edit"
 	    Name		    "sg_list_contents"
 	    Prompt		    " "
@@ -2027,7 +2061,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    58
+	    $ObjectID		    57
 	    Type		    "edit"
 	    Name		    "sg_blockgui_xml"
 	    Prompt		    " "
@@ -4603,7 +4637,7 @@ Model {
       System {
 	Name			"Engine_1\n"
 	Location		[1630, 0, 3141, 898]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -4811,6 +4845,44 @@ Model {
 	  arith_type		  "Boolean"
 	  n_bits		  "16"
 	  bin_pt		  "14"
+	  float_type		  "Single"
+	  exp_bits		  "8"
+	  fraction_bits		  "24"
+	  quantization		  "Truncate"
+	  overflow		  "Wrap"
+	  en			  off
+	  latency		  "0"
+	  dbl_ovrd		  off
+	  pipeline		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "convert"
+	  sg_icon_stat		  "45,30,1,1,white,blue,0,edca21da,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 30 30 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 45 45 0 0 ],[0 0 30 30 0 ]);\npatch([13.1 18.88 22.88 26.88 30.88 22.88 17.1 13.1 ],[19.44 19.44 23.4"
+	  "4 19.44 23.44 23.44 23.44 19.44 ],[1 1 1 ]);\npatch([17.1 22.88 18.88 13.1 17.1 ],[15.44 15.44 19.44 19.44 15.44 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([13.1 18.88 22.88 17.1 13.1 ],[11.44 11.44 15.44 15.44 11.44 ],[1 1 1 ]);\npatch([17."
+	  "1 30.88 26.88 22.88 18.88 13.1 17.1 ],[7.44 7.44 11.44 7.44 11.44 11.44 7.44 ],[0.931 0.946 0.973 ]);\nfprintf('','"
+	  "COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\ncolor('black');port_label('output',1,'cas"
+	  "t');\nfprintf('','COMMENT: end icon text');"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Convert1"
+	  SID			  "216"
+	  Ports			  [1, 1]
+	  Position		  [2090, 655, 2135, 685]
+	  ZOrder		  157
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/Convert"
+	  SourceType		  "Xilinx Type Converter Block"
+	  infoedit		  "Hardware notes: rounding and saturating require hardware resources; truncating and wrapping do not."
+	  gui_display_data_type	  "Fixed-point"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "16"
+	  bin_pt		  "8"
 	  float_type		  "Single"
 	  exp_bits		  "8"
 	  fraction_bits		  "24"
@@ -5902,14 +5974,14 @@ Model {
 	  BlockType		  Reference
 	  Name			  "acc_latch\n"
 	  SID			  "146"
-	  Ports			  [2, 1]
-	  Position		  [2055, 657, 2115, 713]
+	  Ports			  [3, 1]
+	  Position		  [2200, 649, 2250, 761]
 	  ZOrder		  146
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Register"
 	  SourceType		  "Xilinx Register Block"
 	  init			  "0"
-	  rst			  off
+	  rst			  on
 	  en			  on
 	  dbl_ovrd		  off
 	  xl_use_area		  off
@@ -5917,15 +5989,16 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "register"
-	  sg_icon_stat		  "60,56,2,1,white,blue,0,6bd0930c,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
-	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
-	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
-	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
-	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'d'"
-	  ");\ncolor('black');port_label('input',2,'en');\ncolor('black');port_label('output',1,'q');\ncolor('black');disp('z^"
-	  "{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
+	  sg_icon_stat		  "50,112,3,1,white,blue,0,30546de1,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 112 112 0 ],[0.77 0.82 0."
+	  "91 ]);\nplot([0 50 50 0 0 ],[0 0 112 112 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],[63.77 63"
+	  ".77 70.77 63.77 70.77 70.77 70.77 63.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[56.77 56.77 63.77 6"
+	  "3.77 56.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[49.77 49.77 56.77 56.77 49.77 ],[1 1 "
+	  "1 ]);\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[42.77 42.77 49.77 42.77 49.77 49.77 42.77 ],[0.931 0.9"
+	  "46 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');po"
+	  "rt_label('input',1,'d');\ncolor('black');port_label('input',2,'rst');\ncolor('black');port_label('input',3,'en');\n"
+	  "color('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end"
+	  " icon text');"
 	}
 	Block {
 	  BlockType		  Reference
@@ -6387,7 +6460,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Out1"
 	  SID			  "162"
-	  Position		  [2335, 678, 2365, 692]
+	  Position		  [2335, 698, 2365, 712]
 	  ZOrder		  155
 	  IconDisplay		  "Port number"
 	}
@@ -6586,7 +6659,7 @@ Model {
 	Line {
 	  SrcBlock		  "latch_temp_accum"
 	  SrcPort		  1
-	  Points		  [1075, 0; 0, -460]
+	  Points		  [1077, 0; 0, -455]
 	  DstBlock		  "acc_latch\n"
 	  DstPort		  2
 	}
@@ -6696,7 +6769,7 @@ Model {
 	Line {
 	  SrcBlock		  "Accumulator"
 	  SrcPort		  1
-	  DstBlock		  "acc_latch\n"
+	  DstBlock		  "Convert1"
 	  DstPort		  1
 	}
 	Line {
@@ -6837,6 +6910,12 @@ Model {
 	  DstBlock		  "en_filter_cntr"
 	  DstPort		  1
 	}
+	Line {
+	  SrcBlock		  "Convert1"
+	  SrcPort		  1
+	  DstBlock		  "acc_latch\n"
+	  DstPort		  1
+	}
       }
     }
     Block {
@@ -6874,52 +6953,6 @@ Model {
       " ]);\npatch([20.2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 "
       "0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');po"
       "rt_label('output',1,'dout');\nfprintf('','COMMENT: end icon text');"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Gateway In"
-      SID		      "214"
-      Ports		      [1, 1]
-      Position		      [3060, 1000, 3125, 1020]
-      ZOrder		      202
-      LibraryVersion	      "1.2"
-      SourceBlock	      "xbsIndex_r4/Gateway In"
-      SourceType	      "Xilinx Gateway In Block"
-      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, single, double and fixed-point to "
-      " Xilinx fixed-point or floating-point data type.<br><br>Hardware notes:  In hardware these blocks become top lev"
-      "el input ports."
-      gui_display_data_type   "Fixed-point"
-      arith_type	      "Unsigned"
-      n_bits		      "10"
-      bin_pt		      "0"
-      preci_type	      "Single"
-      exp_width		      "8"
-      frac_width	      "24"
-      quantization	      "Round  (unbiased: +/- Inf)"
-      overflow		      "Saturate"
-      period		      "1"
-      dbl_ovrd		      off
-      timing_constraint	      "None"
-      locs_specified	      off
-      LOCs		      "{}"
-      UseAsADC		      off
-      ADCChannel	      "'1'"
-      xl_use_area	      off
-      xl_area		      "[0,0,0,0,0,0,0]"
-      inherit_from_input      off
-      hdl_port		      "on"
-      has_advanced_control    "0"
-      sggui_pos		      "-1,-1,-1,-1"
-      block_type	      "gatewayin"
-      sg_icon_stat	      "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 20 20 0 ],[0.95 0."
-      "93 0.65 ]);\nplot([0 65 65 0 0 ],[0 0 20 20 0 ]);\npatch([27.55 30.44 32.44 34.44 36.44 32.44 29.55 27.55 ],[12."
-      "22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([29.55 32.44 30.44 27.55 29.55 ],[10.22 10.22 1"
-      "2.22 12.22 10.22 ],[0.985 0.979 0.895 ]);\npatch([27.55 30.44 32.44 29.55 27.55 ],[8.22 8.22 10.22 10.22 8.22 ],"
-      "[1 1 1 ]);\npatch([29.55 36.44 34.44 32.44 30.44 27.55 29.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.97"
-      "9 0.895 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
-      "port_label('input',1,'\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfp"
-      "rintf('','COMMENT: end icon text');"
     }
     Block {
       BlockType		      Reference
@@ -7485,7 +7518,7 @@ Model {
       DstPort		      1
     }
     Line {
-      SrcBlock		      "Gateway In"
+      SrcBlock		      "AtoD_DataMem_Addr\n"
       SrcPort		      1
       DstBlock		      "Shared Memory"
       DstPort		      1
