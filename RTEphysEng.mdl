@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.65"
+    ComputedModelVersion    "1.70"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1630.0, 0.0, 1511.0, 898.0]
+      Location		      [89.0, 0.0, 1511.0, 863.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -58,16 +58,28 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		6
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1457.0, 692.0]
-	ZoomFactor		[1.5]
-	Offset			[2875.5166625976553, 981.3333333333336]
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		2
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1457.0, 657.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [2450.9166666666647, 1094.75]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "160"
+	  Extents		  [1457.0, 657.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [937.0, 183.0]
+	}
+	PropName		"EditorsInfo"
       }
     }
   }
@@ -77,9 +89,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "pdw"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Feb 05 15:23:31 2015"
-  RTWModifiedTimeStamp	  345050413
-  ModelVersionFormat	  "1.%<AutoIncrement:65>"
+  LastModifiedDate	  "Mon Feb 09 12:12:54 2015"
+  RTWModifiedTimeStamp	  345384750
+  ModelVersionFormat	  "1.%<AutoIncrement:70>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -114,7 +126,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    8
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "RTEphysEng"
     overrideMode_	    [0.0]
@@ -173,13 +185,13 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      8
+      $ObjectID		      9
       Version		      "1.12.1"
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  9
+	  $ObjectID		  10
 	  Version		  "1.12.1"
 	  StartTime		  "0.0"
 	  StopTime		  ".0002"
@@ -214,7 +226,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  10
+	  $ObjectID		  11
 	  Version		  "1.12.1"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -246,7 +258,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  11
+	  $ObjectID		  12
 	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
@@ -302,7 +314,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  12
+	  $ObjectID		  13
 	  Version		  "1.12.1"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -392,7 +404,7 @@ Model {
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  13
+	  $ObjectID		  14
 	  Version		  "1.12.1"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -429,7 +441,7 @@ Model {
 	  ProdEqTarget		  on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
+	  $ObjectID		  15
 	  Version		  "1.12.1"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -444,7 +456,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  15
+	  $ObjectID		  16
 	  Version		  "1.12.1"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -459,7 +471,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
+	  $ObjectID		  17
 	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
@@ -528,7 +540,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      17
+	      $ObjectID		      18
 	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
@@ -596,7 +608,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
+	      $ObjectID		      19
 	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
@@ -676,7 +688,7 @@ Model {
 	  }
 	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  19
+	  $ObjectID		  20
 	  Version		  "1.12.1"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -698,11 +710,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    8
+    $ObjectID		    9
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    20
+    $ObjectID		    21
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -839,7 +851,7 @@ Model {
   }
   System {
     Name		    "RTEphysEng"
-    Location		    [1630, 0, 3141, 898]
+    Location		    [89, 0, 1600, 863]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -851,9 +863,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "216"
+    SIDHighWatermark	    "224"
     Block {
       BlockType		      Reference
       Name		      " System Generator"
@@ -892,7 +904,7 @@ Model {
       deprecated_control      off
       eval_field	      "0"
       has_advanced_control    "0"
-      sggui_pos		      "122,142,464,470"
+      sggui_pos		      "172,159,464,470"
       block_type	      "sysgen"
       sg_icon_stat	      "50,50,0,0,token,white,0,58c5b5770fe5f7c311f53dbc6e73f0f6,right,,[ ],[ ]"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 50 50 0 ],[1 1 1 ]"
@@ -965,6 +977,52 @@ Model {
       gui_display_data_type   "Fixed-point"
       arith_type	      "Unsigned"
       n_bits		      "10"
+      bin_pt		      "0"
+      preci_type	      "Single"
+      exp_width		      "8"
+      frac_width	      "24"
+      quantization	      "Round  (unbiased: +/- Inf)"
+      overflow		      "Saturate"
+      period		      "1"
+      dbl_ovrd		      off
+      timing_constraint	      "None"
+      locs_specified	      off
+      LOCs		      "{}"
+      UseAsADC		      off
+      ADCChannel	      "'1'"
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      inherit_from_input      off
+      hdl_port		      "on"
+      has_advanced_control    "0"
+      sggui_pos		      "-1,-1,-1,-1"
+      block_type	      "gatewayin"
+      sg_icon_stat	      "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 20 20 0 ],[0.95 0."
+      "93 0.65 ]);\nplot([0 65 65 0 0 ],[0 0 20 20 0 ]);\npatch([27.55 30.44 32.44 34.44 36.44 32.44 29.55 27.55 ],[12."
+      "22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([29.55 32.44 30.44 27.55 29.55 ],[10.22 10.22 1"
+      "2.22 12.22 10.22 ],[0.985 0.979 0.895 ]);\npatch([27.55 30.44 32.44 29.55 27.55 ],[8.22 8.22 10.22 10.22 8.22 ],"
+      "[1 1 1 ]);\npatch([29.55 36.44 34.44 32.44 30.44 27.55 29.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.97"
+      "9 0.895 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
+      "port_label('input',1,'\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfp"
+      "rintf('','COMMENT: end icon text');"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "AtoD_DataMem_Data\n"
+      SID		      "215"
+      Ports		      [1, 1]
+      Position		      [3060, 1045, 3125, 1065]
+      ZOrder		      203
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/Gateway In"
+      SourceType	      "Xilinx Gateway In Block"
+      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, single, double and fixed-point to "
+      " Xilinx fixed-point or floating-point data type.<br><br>Hardware notes:  In hardware these blocks become top lev"
+      "el input ports."
+      gui_display_data_type   "Fixed-point"
+      arith_type	      "Unsigned"
+      n_bits		      "16"
       bin_pt		      "0"
       preci_type	      "Single"
       exp_width		      "8"
@@ -1349,6 +1407,46 @@ Model {
     }
     Block {
       BlockType		      Reference
+      Name		      "Constant2"
+      SID		      "217"
+      Ports		      [0, 1]
+      Position		      [3835, 1527, 3890, 1553]
+      ZOrder		      205
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/Constant"
+      SourceType	      "Xilinx Constant Block Block"
+      const		      "1"
+      gui_display_data_type   "Boolean"
+      arith_type	      "Boolean"
+      n_bits		      "16"
+      bin_pt		      "14"
+      preci_type	      "Single"
+      exp_width		      "8"
+      frac_width	      "24"
+      explicit_period	      off
+      period		      "1"
+      dsp48_infoedit	      "The use of this block for DSP48 instructions is deprecated.  Please use the Opmode block."
+      equ		      "P=C"
+      opselect		      "C"
+      inp2		      "PCIN>>17"
+      opr		      "+"
+      inp1		      "P"
+      carry		      "CIN"
+      dbl_ovrd		      off
+      has_advanced_control    "0"
+      sggui_pos		      "-1,-1,-1,-1"
+      block_type	      "constant"
+      sg_icon_stat	      "55,26,0,1,white,blue,0,1c72b5be,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 55 55 0 0 ],[0 0 26 26 0 ],[0.77 0."
+      "82 0.91 ]);\nplot([0 55 55 0 0 ],[0 0 26 26 0 ]);\npatch([20.325 24.66 27.66 30.66 33.66 27.66 23.325 20.325 ],["
+      "16.33 16.33 19.33 16.33 19.33 19.33 19.33 16.33 ],[1 1 1 ]);\npatch([23.325 27.66 24.66 20.325 23.325 ],[13.33 1"
+      "3.33 16.33 16.33 13.33 ],[0.931 0.946 0.973 ]);\npatch([20.325 24.66 27.66 23.325 20.325 ],[10.33 10.33 13.33 13"
+      ".33 10.33 ],[1 1 1 ]);\npatch([23.325 33.66 30.66 27.66 24.66 20.325 23.325 ],[7.33 7.33 10.33 7.33 10.33 10.33 "
+      "7.33 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text')"
+      ";\ncolor('black');port_label('output',1,'1');\nfprintf('','COMMENT: end icon text');"
+    }
+    Block {
+      BlockType		      Reference
       Name		      "Control16"
       SID		      "172"
       Ports		      [1, 1]
@@ -1387,7 +1485,7 @@ Model {
       Name		      "Convert"
       SID		      "213"
       Ports		      [1, 1]
-      Position		      [3705, 1365, 3750, 1395]
+      Position		      [3690, 1365, 3735, 1395]
       ZOrder		      201
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Convert"
@@ -1682,7 +1780,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		21
+	$ObjectID		22
 	$ClassName		"Simulink.Mask"
 	Type			"Xilinx EDK Processor Block"
 	Description		"Xilinx EDK Processor"
@@ -1706,7 +1804,7 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  36
 	  Object {
-	    $ObjectID		    22
+	    $ObjectID		    23
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -1721,7 +1819,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    23
+	    $ObjectID		    24
 	    Type		    "edit"
 	    Name		    "xmp"
 	    Prompt		    "XPS Project"
@@ -1729,43 +1827,31 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    24
+	    $ObjectID		    25
 	    Type		    "edit"
 	    Name		    "MemVisToProc"
 	    Prompt		    " "
-	    Value		    "<qt bgcolor=\"#FFFFFF\"><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerminus.gi"
-	    "f\"> &lt;&lt;E1_template_size&gt;&gt;<br> <img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/parameters.gif\""
-	    "> Type : Fix_16_0<br> <img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/parameters.gif\"> Addr : 0x80004000"
-	    "<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerminus.gif\"> &lt;&lt;ESP_Contol_Re"
-	    "g&gt;&gt;<br> <img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/parameters.gif\"> Type : Fix_16_0<br> <img "
-	    "src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/parameters.gif\"> Addr : 0x80004004<br></div><div><img src=\"C"
-	    ":/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerminus.gif\"> &lt;&lt;E1_samples_to_skip&gt;&gt;<br> <img src="
-	    "\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/parameters.gif\"> Type : Fix_8_0<br> <img src=\"C:/Xilinx/14.7/ISE"
-	    "_DS/ISE/sysgen/data/images/parameters.gif\"> Addr : 0x80004008<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE"
-	    "/sysgen/data/images/registerminus.gif\"> &lt;&lt;E1_filter_length&gt;&gt;<br> <img src=\"C:/Xilinx/14.7/ISE_DS/IS"
-	    "E/sysgen/data/images/parameters.gif\"> Type : Fix_16_0<br> <img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/image"
-	    "s/parameters.gif\"> Addr : 0x8000400C<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/regis"
-	    "terminus.gif\"> &lt;&lt;dtoa1_data_regB&gt;&gt;<br> <img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/param"
-	    "eters.gif\"> Type : Fix_16_0<br> <img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/parameters.gif\"> Addr :"
-	    " 0x80004010<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerplus.gif\"> &lt;&lt;dto"
-	    "a1_data_regA&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerplus.gif\"> &l"
-	    "t;&lt;dtoa0_data_regB&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerplus."
-	    "gif\"> &lt;&lt;dtoa0_data_regA&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/regi"
-	    "sterplus.gif\"> &lt;&lt;ESP_Status_Reg&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/ima"
-	    "ges/memoryminus.gif\"> &lt;&lt;AtoD_DataMem&gt;&gt;<br> <img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/p"
-	    "arameters.gif\"> Type : Fix_16_0<br> <img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/parameters.gif\"> Ad"
-	    "dr : 0x80000000<br> <img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/parameters.gif\"> Depth : 1024<br></d"
-	    "iv><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/memoryplus.gif\"> &lt;&lt;E1_filter_RAM&gt;&gt;<b"
-	    "r></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/memoryminus.gif\"> &lt;&lt;E1_Data_RAM&gt;&g"
-	    "t;<br> <img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/parameters.gif\"> Type : Fix_16_15<br> <img src=\""
-	    "C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/parameters.gif\"> Addr : 0x80001200<br> <img src=\"C:/Xilinx/14.7/IS"
-	    "E_DS/ISE/sysgen/data/images/parameters.gif\"> Depth : 128<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysg"
-	    "en/data/images/memoryplus.gif\"> &lt;&lt;E1_template_RAM&gt;&gt;<br></div></qt>"
+	    Value		    "<qt bgcolor=\"#FFFFFF\"><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerplus.gif"
+	    "\"> &lt;&lt;E1_template_size&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/regist"
+	    "erplus.gif\"> &lt;&lt;ESP_Contol_Reg&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/image"
+	    "s/registerplus.gif\"> &lt;&lt;E1_samples_to_skip&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysge"
+	    "n/data/images/registerplus.gif\"> &lt;&lt;E1_filter_length&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS"
+	    "/ISE/sysgen/data/images/registerplus.gif\"> &lt;&lt;dtoa1_data_regB&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14"
+	    ".7/ISE_DS/ISE/sysgen/data/images/registerplus.gif\"> &lt;&lt;dtoa1_data_regA&gt;&gt;<br></div><div><img src=\"C:/"
+	    "Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerplus.gif\"> &lt;&lt;dtoa0_data_regB&gt;&gt;<br></div><div><img "
+	    "src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerplus.gif\"> &lt;&lt;dtoa0_data_regA&gt;&gt;<br></div><"
+	    "div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerplus.gif\"> &lt;&lt;ESP_Status_Reg&gt;&gt;<br"
+	    "></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/registerplus.gif\"> &lt;&lt;E1_Template_Acc_R"
+	    "eg&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/memoryplus.gif\"> &lt;&lt;AtoD_D"
+	    "ataMem&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/memoryplus.gif\"> &lt;&lt;E1"
+	    "_filter_RAM&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/memoryplus.gif\"> &lt;&"
+	    "lt;E1_Data_RAM&gt;&gt;<br></div><div><img src=\"C:/Xilinx/14.7/ISE_DS/ISE/sysgen/data/images/memoryplus.gif\"> &l"
+	    "t;&lt;E1_template_RAM&gt;&gt;<br></div></qt>"
 	    Evaluate		    "off"
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    25
+	    $ObjectID		    26
 	    Type		    "edit"
 	    Name		    "AvailableMemories"
 	    Prompt		    "Available Memories"
@@ -1773,7 +1859,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    26
+	    $ObjectID		    27
 	    Type		    "edit"
 	    Name		    "portInterfaceTable"
 	    Prompt		    " "
@@ -1781,7 +1867,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    27
+	    $ObjectID		    28
 	    Type		    "edit"
 	    Name		    "bus_type_sgadvanced"
 	    Prompt		    " "
@@ -1790,7 +1876,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    28
+	    $ObjectID		    29
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -1805,7 +1891,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    29
+	    $ObjectID		    30
 	    Type		    "edit"
 	    Name		    "baseaddr"
 	    Prompt		    "Base Address"
@@ -1813,7 +1899,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    30
+	    $ObjectID		    31
 	    Type		    "edit"
 	    Name		    "baseaddr_lock_sgadvanced"
 	    Prompt		    " "
@@ -1822,14 +1908,14 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    31
+	    $ObjectID		    32
 	    Type		    "checkbox"
 	    Name		    "baseaddr_lock"
 	    Prompt		    "Lock"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    32
+	    $ObjectID		    33
 	    Type		    "edit"
 	    Name		    "dual_clock_sgadvanced"
 	    Prompt		    " "
@@ -1838,14 +1924,14 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    33
+	    $ObjectID		    34
 	    Type		    "checkbox"
 	    Name		    "dual_clock"
 	    Prompt		    "Dual Clocks"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    34
+	    $ObjectID		    35
 	    Type		    "edit"
 	    Name		    "reg_readback_sgadvanced"
 	    Prompt		    " "
@@ -1854,14 +1940,14 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    35
+	    $ObjectID		    36
 	    Type		    "checkbox"
 	    Name		    "reg_readback"
 	    Prompt		    "Register Read-Back"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    36
+	    $ObjectID		    37
 	    Type		    "edit"
 	    Name		    "ucf_file"
 	    Prompt		    "Constraint File"
@@ -1869,7 +1955,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    37
+	    $ObjectID		    38
 	    Type		    "edit"
 	    Name		    "inheritDeviceType_sgadvanced"
 	    Prompt		    " "
@@ -1878,14 +1964,14 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    38
+	    $ObjectID		    39
 	    Type		    "checkbox"
 	    Name		    "inheritDeviceType"
 	    Prompt		    "Inherit Device Type"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    39
+	    $ObjectID		    40
 	    Type		    "edit"
 	    Name		    "elf_file"
 	    Prompt		    "Initial Program"
@@ -1893,7 +1979,7 @@ Model {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    40
+	    $ObjectID		    41
 	    Type		    "edit"
 	    Name		    "codebug_sgadvanced"
 	    Prompt		    " "
@@ -1902,14 +1988,14 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    41
+	    $ObjectID		    42
 	    Type		    "checkbox"
 	    Name		    "codebug"
 	    Prompt		    "Enable Co-Debug with Xilinx SDK (Beta)"
 	    Value		    "on"
 	  }
 	  Object {
-	    $ObjectID		    42
+	    $ObjectID		    43
 	    Type		    "edit"
 	    Name		    "clock_name"
 	    Prompt		    " "
@@ -1918,7 +2004,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    43
+	    $ObjectID		    44
 	    Type		    "edit"
 	    Name		    "internalPortList"
 	    Prompt		    " "
@@ -1927,7 +2013,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    44
+	    $ObjectID		    45
 	    Type		    "edit"
 	    Name		    "resetPolarity"
 	    Prompt		    " "
@@ -1936,28 +2022,29 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    45
+	    $ObjectID		    46
 	    Type		    "edit"
 	    Name		    "memxtable"
 	    Prompt		    " "
 	    Value		    "{'mladdr'=>[0.00000000000000000,1.00000000000000000,2.00000000000000000,3.00000000000000000,4.0000000"
-	    "0000000000,5.00000000000000000,6.00000000000000000,7.00000000000000000,0.00000000000000000,-1.00000000000000000,-"
-	    "1.00000000000000000,-1.00000000000000000,-1.00000000000000000],'mlist'=>['RTEphysEng/Engine_1\n/From Register','R"
-	    "TEphysEng/From Register','RTEphysEng/Engine_1\n/From Register2','RTEphysEng/Engine_1\n/From Register1','RTEphysEn"
-	    "g/DtoA_Converters/From Register4','RTEphysEng/DtoA_Converters/From Register3','RTEphysEng/DtoA_Converters/From Re"
-	    "gister2','RTEphysEng/DtoA_Converters/From Register1','RTEphysEng/To Register','RTEphysEng/Shared Memory','RTEphys"
-	    "Eng/Engine_1\n/Shared Memory2','RTEphysEng/Engine_1\n/Shared Memory1','RTEphysEng/Engine_1\n/Shared Memory'],'mln"
-	    "ame'=>['\\'E1_template_size\\'','\\'ESP_Contol_Reg\\'','\\'E1_samples_to_skip\\'','\\'E1_filter_length\\'','\\'dt"
-	    "oa1_data_regB\\'','\\'dtoa1_data_regA\\'','\\'dtoa0_data_regB\\'','\\'dtoa0_data_regA\\'','\\'ESP_Status_Reg\\'',"
-	    "'\\'AtoD_DataMem\\'','\\'E1_filter_RAM\\'','\\'E1_Data_RAM\\'','\\'E1_template_RAM\\''],'mlstate'=>[1.00000000000"
-	    "000000,1.00000000000000000,1.00000000000000000,1.00000000000000000,1.00000000000000000,0.00000000000000000,0.0000"
-	    "0000000000000,0.00000000000000000,0.00000000000000000,1.00000000000000000,0.00000000000000000,1.00000000000000000"
-	    ",0.00000000000000000]}"
+	    "0000000000,5.00000000000000000,6.00000000000000000,7.00000000000000000,0.00000000000000000,1.00000000000000000,-1"
+	    ".00000000000000000,-1.00000000000000000,-1.00000000000000000,-1.00000000000000000],'mlist'=>['RTEphysEng/Engine_1"
+	    "\n/From Register','RTEphysEng/From Register','RTEphysEng/Engine_1\n/From Register2','RTEphysEng/Engine_1\n/From R"
+	    "egister1','RTEphysEng/DtoA_Converters/From Register4','RTEphysEng/DtoA_Converters/From Register3','RTEphysEng/Dto"
+	    "A_Converters/From Register2','RTEphysEng/DtoA_Converters/From Register1','RTEphysEng/To Register','RTEphysEng/To "
+	    "Register1','RTEphysEng/Shared Memory','RTEphysEng/Engine_1\n/Shared Memory2','RTEphysEng/Engine_1\n/Shared Memory"
+	    "1','RTEphysEng/Engine_1\n/Shared Memory'],'mlname'=>['\\'E1_template_size\\'','\\'ESP_Contol_Reg\\'','\\'E1_sampl"
+	    "es_to_skip\\'','\\'E1_filter_length\\'','\\'dtoa1_data_regB\\'','\\'dtoa1_data_regA\\'','\\'dtoa0_data_regB\\'','"
+	    "\\'dtoa0_data_regA\\'','\\'ESP_Status_Reg\\'','\\'E1_Template_Acc_Reg\\'','\\'AtoD_DataMem\\'','\\'E1_filter_RAM\\"
+	    "'','\\'E1_Data_RAM\\'','\\'E1_template_RAM\\''],'mlstate'=>[0.00000000000000000,0.00000000000000000,0.00000000000"
+	    "000000,0.00000000000000000,0.00000000000000000,0.00000000000000000,0.00000000000000000,0.00000000000000000,0.0000"
+	    "0000000000000,0.00000000000000000,0.00000000000000000,0.00000000000000000,0.00000000000000000,0.00000000000000000"
+	    "]}"
 	    Evaluate		    "off"
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    46
+	    $ObjectID		    47
 	    Type		    "edit"
 	    Name		    "procinfo"
 	    Prompt		    " "
@@ -1966,7 +2053,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    47
+	    $ObjectID		    48
 	    Type		    "edit"
 	    Name		    "memmapdirty"
 	    Prompt		    " "
@@ -1975,7 +2062,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    48
+	    $ObjectID		    49
 	    Type		    "edit"
 	    Name		    "blockname"
 	    Prompt		    " "
@@ -1984,7 +2071,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    49
+	    $ObjectID		    50
 	    Type		    "edit"
 	    Name		    "xpsintstyle"
 	    Prompt		    " "
@@ -1993,7 +2080,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    50
+	    $ObjectID		    51
 	    Type		    "edit"
 	    Name		    "has_advanced_control"
 	    Prompt		    " "
@@ -2001,7 +2088,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    51
+	    $ObjectID		    52
 	    Type		    "edit"
 	    Name		    "sggui_pos"
 	    Prompt		    " "
@@ -2010,7 +2097,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    52
+	    $ObjectID		    53
 	    Type		    "edit"
 	    Name		    "block_type"
 	    Prompt		    " "
@@ -2019,7 +2106,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    53
+	    $ObjectID		    54
 	    Type		    "edit"
 	    Name		    "block_version"
 	    Prompt		    " "
@@ -2028,7 +2115,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    54
+	    $ObjectID		    55
 	    Type		    "edit"
 	    Name		    "sg_icon_stat"
 	    Prompt		    " "
@@ -2037,7 +2124,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    55
+	    $ObjectID		    56
 	    Type		    "edit"
 	    Name		    "sg_mask_display"
 	    Prompt		    " "
@@ -2052,7 +2139,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    56
+	    $ObjectID		    57
 	    Type		    "edit"
 	    Name		    "sg_list_contents"
 	    Prompt		    " "
@@ -2061,7 +2148,7 @@ Model {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    57
+	    $ObjectID		    58
 	    Type		    "edit"
 	    Name		    "sg_blockgui_xml"
 	    Prompt		    " "
@@ -2087,54 +2174,54 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"476"
+	SIDHighWatermark	"628"
 	Block {
 	  BlockType		  Constant
 	  Name			  "Constant"
-	  SID			  "164:441"
-	  Position		  [40, 430, 60, 450]
-	  ZOrder		  393
+	  SID			  "164:592"
+	  Position		  [40, 625, 60, 645]
+	  ZOrder		  544
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Constant
 	  Name			  "Constant1"
-	  SID			  "164:443"
-	  Position		  [40, 485, 60, 505]
-	  ZOrder		  395
+	  SID			  "164:594"
+	  Position		  [40, 695, 60, 715]
+	  ZOrder		  546
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Constant
 	  Name			  "Constant2"
-	  SID			  "164:445"
-	  Position		  [40, 545, 60, 565]
-	  ZOrder		  397
+	  SID			  "164:596"
+	  Position		  [40, 765, 60, 785]
+	  ZOrder		  548
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Constant
 	  Name			  "Constant3"
-	  SID			  "164:447"
-	  Position		  [40, 605, 60, 625]
-	  ZOrder		  399
+	  SID			  "164:598"
+	  Position		  [40, 830, 60, 850]
+	  ZOrder		  550
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Constant
 	  Name			  "Constant4"
-	  SID			  "164:449"
-	  Position		  [40, 660, 60, 680]
-	  ZOrder		  401
+	  SID			  "164:600"
+	  Position		  [40, 900, 60, 920]
+	  ZOrder		  552
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "Constant5"
-	  SID			  "164:451"
+	  SID			  "164:602"
 	  Ports			  [0, 1]
-	  Position		  [20, 357, 75, 383]
-	  ZOrder		  403
+	  Position		  [20, 552, 75, 578]
+	  ZOrder		  554
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Constant"
@@ -2178,18 +2265,18 @@ Model {
 	Block {
 	  BlockType		  Constant
 	  Name			  "Constant6"
-	  SID			  "164:452"
-	  Position		  [40, 780, 60, 800]
-	  ZOrder		  404
+	  SID			  "164:603"
+	  Position		  [40, 1000, 60, 1020]
+	  ZOrder		  555
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "From Register"
-	  SID			  "164:455"
+	  SID			  "164:606"
 	  Ports			  [0, 1]
-	  Position		  [260, 852, 320, 908]
-	  ZOrder		  407
+	  Position		  [400, 1087, 460, 1143]
+	  ZOrder		  558
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/From Register"
@@ -2227,11 +2314,53 @@ Model {
 	}
 	Block {
 	  BlockType		  Reference
+	  Name			  "From Register1"
+	  SID			  "164:607"
+	  Ports			  [0, 1]
+	  Position		  [400, 1192, 460, 1248]
+	  ZOrder		  559
+	  AttributesFormatString  "<< %<shared_memory_name> >>"
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/From Register"
+	  SourceType		  "Xilinx Shared Memory Based From Register Block"
+	  infoedit		  "Register block that reads data to a shared memory register.  Delay of one sample period."
+	  shared_memory_name	  "'E1_Template_Acc_Reg'"
+	  init			  "0"
+	  period		  "xlGetNormalizedPeriod()"
+	  ownership		  "Owned and initialized elsewhere"
+	  gui_display_data_type	  "Fixed-point"
+	  arith_type		  "Unsigned"
+	  n_bits		  "16"
+	  bin_pt		  "0"
+	  preci_type		  "Single"
+	  dbl_ovrd		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "fromreg"
+	  sg_icon_stat		  "60,56,0,1,white,blue,0,b27a07ff,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('output',1,'d"
+	  "out');\nfprintf('','COMMENT: end icon text');"
+	  Port {
+	    PortNumber		    1
+	    Name		    "E1_Template_Acc_Reg_dout"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Reference
 	  Name			  "PLB_ABus"
-	  SID			  "164:444"
+	  SID			  "164:595"
 	  Ports			  [1, 1]
-	  Position		  [110, 485, 175, 505]
-	  ZOrder		  396
+	  Position		  [175, 695, 245, 715]
+	  ZOrder		  547
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway In"
 	  SourceType		  "Xilinx Gateway In Block"
@@ -2262,12 +2391,12 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "gatewayin"
-	  sg_icon_stat		  "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
-	  " ]);\nplot([0 65 65 0 0 ],[0 0 20 20 0 ]);\npatch([27.55 30.44 32.44 34.44 36.44 32.44 29.55 27.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([29.55 32.44 30.44 27.55 29.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.985 0.979 0.895 ]);\npatch([27.55 30.44 32.44 29.55 27.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([29.55 36.44 34.44 32.44 30.44 27.55 29.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
+	  sg_icon_stat		  "70,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 70 70 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
+	  " ]);\nplot([0 70 70 0 0 ],[0 0 20 20 0 ]);\npatch([30.55 33.44 35.44 37.44 39.44 35.44 32.55 30.55 ],[12.22 12.22 1"
+	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([32.55 35.44 33.44 30.55 32.55 ],[10.22 10.22 12.22 12.22 10"
+	  ".22 ],[0.985 0.979 0.895 ]);\npatch([30.55 33.44 35.44 32.55 30.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
+	  "h([32.55 39.44 37.44 35.44 33.44 30.55 32.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
 	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'"
 	  "\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfprintf('','COMMENT: end ic"
 	  "on text');"
@@ -2281,10 +2410,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "PLB_PAValid"
-	  SID			  "164:446"
+	  SID			  "164:597"
 	  Ports			  [1, 1]
-	  Position		  [110, 545, 175, 565]
-	  ZOrder		  398
+	  Position		  [175, 765, 245, 785]
+	  ZOrder		  549
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway In"
 	  SourceType		  "Xilinx Gateway In Block"
@@ -2315,12 +2444,12 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "gatewayin"
-	  sg_icon_stat		  "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
-	  " ]);\nplot([0 65 65 0 0 ],[0 0 20 20 0 ]);\npatch([27.55 30.44 32.44 34.44 36.44 32.44 29.55 27.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([29.55 32.44 30.44 27.55 29.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.985 0.979 0.895 ]);\npatch([27.55 30.44 32.44 29.55 27.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([29.55 36.44 34.44 32.44 30.44 27.55 29.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
+	  sg_icon_stat		  "70,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 70 70 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
+	  " ]);\nplot([0 70 70 0 0 ],[0 0 20 20 0 ]);\npatch([30.55 33.44 35.44 37.44 39.44 35.44 32.55 30.55 ],[12.22 12.22 1"
+	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([32.55 35.44 33.44 30.55 32.55 ],[10.22 10.22 12.22 12.22 10"
+	  ".22 ],[0.985 0.979 0.895 ]);\npatch([30.55 33.44 35.44 32.55 30.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
+	  "h([32.55 39.44 37.44 35.44 33.44 30.55 32.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
 	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'"
 	  "\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfprintf('','COMMENT: end ic"
 	  "on text');"
@@ -2334,10 +2463,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "PLB_RNW"
-	  SID			  "164:448"
+	  SID			  "164:599"
 	  Ports			  [1, 1]
-	  Position		  [110, 605, 175, 625]
-	  ZOrder		  400
+	  Position		  [175, 830, 245, 850]
+	  ZOrder		  551
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway In"
 	  SourceType		  "Xilinx Gateway In Block"
@@ -2368,12 +2497,12 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "gatewayin"
-	  sg_icon_stat		  "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
-	  " ]);\nplot([0 65 65 0 0 ],[0 0 20 20 0 ]);\npatch([27.55 30.44 32.44 34.44 36.44 32.44 29.55 27.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([29.55 32.44 30.44 27.55 29.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.985 0.979 0.895 ]);\npatch([27.55 30.44 32.44 29.55 27.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([29.55 36.44 34.44 32.44 30.44 27.55 29.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
+	  sg_icon_stat		  "70,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 70 70 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
+	  " ]);\nplot([0 70 70 0 0 ],[0 0 20 20 0 ]);\npatch([30.55 33.44 35.44 37.44 39.44 35.44 32.55 30.55 ],[12.22 12.22 1"
+	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([32.55 35.44 33.44 30.55 32.55 ],[10.22 10.22 12.22 12.22 10"
+	  ".22 ],[0.985 0.979 0.895 ]);\npatch([30.55 33.44 35.44 32.55 30.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
+	  "h([32.55 39.44 37.44 35.44 33.44 30.55 32.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
 	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'"
 	  "\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfprintf('','COMMENT: end ic"
 	  "on text');"
@@ -2387,10 +2516,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "PLB_wrDBus"
-	  SID			  "164:450"
+	  SID			  "164:601"
 	  Ports			  [1, 1]
-	  Position		  [110, 660, 175, 680]
-	  ZOrder		  402
+	  Position		  [175, 900, 245, 920]
+	  ZOrder		  553
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway In"
 	  SourceType		  "Xilinx Gateway In Block"
@@ -2421,12 +2550,12 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "gatewayin"
-	  sg_icon_stat		  "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
-	  " ]);\nplot([0 65 65 0 0 ],[0 0 20 20 0 ]);\npatch([27.55 30.44 32.44 34.44 36.44 32.44 29.55 27.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([29.55 32.44 30.44 27.55 29.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.985 0.979 0.895 ]);\npatch([27.55 30.44 32.44 29.55 27.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([29.55 36.44 34.44 32.44 30.44 27.55 29.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
+	  sg_icon_stat		  "70,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 70 70 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
+	  " ]);\nplot([0 70 70 0 0 ],[0 0 20 20 0 ]);\npatch([30.55 33.44 35.44 37.44 39.44 35.44 32.55 30.55 ],[12.22 12.22 1"
+	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([32.55 35.44 33.44 30.55 32.55 ],[10.22 10.22 12.22 12.22 10"
+	  ".22 ],[0.985 0.979 0.895 ]);\npatch([30.55 33.44 35.44 32.55 30.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
+	  "h([32.55 39.44 37.44 35.44 33.44 30.55 32.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
 	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'"
 	  "\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfprintf('','COMMENT: end ic"
 	  "on text');"
@@ -2440,10 +2569,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "SPLB_Rst"
-	  SID			  "164:442"
+	  SID			  "164:593"
 	  Ports			  [1, 1]
-	  Position		  [110, 430, 175, 450]
-	  ZOrder		  394
+	  Position		  [175, 625, 245, 645]
+	  ZOrder		  545
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway In"
 	  SourceType		  "Xilinx Gateway In Block"
@@ -2474,12 +2603,12 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "gatewayin"
-	  sg_icon_stat		  "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
-	  " ]);\nplot([0 65 65 0 0 ],[0 0 20 20 0 ]);\npatch([27.55 30.44 32.44 34.44 36.44 32.44 29.55 27.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([29.55 32.44 30.44 27.55 29.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.985 0.979 0.895 ]);\npatch([27.55 30.44 32.44 29.55 27.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([29.55 36.44 34.44 32.44 30.44 27.55 29.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
+	  sg_icon_stat		  "70,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 70 70 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
+	  " ]);\nplot([0 70 70 0 0 ],[0 0 20 20 0 ]);\npatch([30.55 33.44 35.44 37.44 39.44 35.44 32.55 30.55 ],[12.22 12.22 1"
+	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([32.55 35.44 33.44 30.55 32.55 ],[10.22 10.22 12.22 12.22 10"
+	  ".22 ],[0.985 0.979 0.895 ]);\npatch([30.55 33.44 35.44 32.55 30.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
+	  "h([32.55 39.44 37.44 35.44 33.44 30.55 32.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
 	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'"
 	  "\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfprintf('','COMMENT: end ic"
 	  "on text');"
@@ -2493,10 +2622,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Shared Memory"
-	  SID			  "164:472"
+	  SID			  "164:624"
 	  Ports			  [3, 1]
-	  Position		  [605, 920, 685, 1010]
-	  ZOrder		  424
+	  Position		  [885, 1164, 965, 1256]
+	  ZOrder		  576
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Shared Memory"
@@ -2524,12 +2653,12 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "shmem"
-	  sg_icon_stat		  "80,90,3,1,white,blue,0,bf435243,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 80 80 0 0 ],[0 0 90 90 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 80 80 0 0 ],[0 0 90 90 0 ]);\npatch([15.525 31.42 42.42 53.42 64.42 42.42 26.525 15.525 ],[57.21 57.2"
-	  "1 68.21 57.21 68.21 68.21 68.21 57.21 ],[1 1 1 ]);\npatch([26.525 42.42 31.42 15.525 26.525 ],[46.21 46.21 57.21 57"
-	  ".21 46.21 ],[0.931 0.946 0.973 ]);\npatch([15.525 31.42 42.42 26.525 15.525 ],[35.21 35.21 46.21 46.21 35.21 ],[1 1"
-	  " 1 ]);\npatch([26.525 64.42 53.42 42.42 31.42 15.525 26.525 ],[24.21 24.21 35.21 24.21 35.21 35.21 24.21 ],[0.931 0"
+	  sg_icon_stat		  "80,92,3,1,white,blue,0,bf435243,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 80 80 0 0 ],[0 0 92 92 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 80 80 0 0 ],[0 0 92 92 0 ]);\npatch([15.525 31.42 42.42 53.42 64.42 42.42 26.525 15.525 ],[58.21 58.2"
+	  "1 69.21 58.21 69.21 69.21 69.21 58.21 ],[1 1 1 ]);\npatch([26.525 42.42 31.42 15.525 26.525 ],[47.21 47.21 58.21 58"
+	  ".21 47.21 ],[0.931 0.946 0.973 ]);\npatch([15.525 31.42 42.42 26.525 15.525 ],[36.21 36.21 47.21 47.21 36.21 ],[1 1"
+	  " 1 ]);\npatch([26.525 64.42 53.42 42.42 31.42 15.525 26.525 ],[25.21 25.21 36.21 25.21 36.21 36.21 25.21 ],[0.931 0"
 	  ".946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
 	  "port_label('input',1,'addr');\ncolor('black');port_label('input',2,'din');\ncolor('black');port_label('input',3,'we"
 	  "');\ncolor('black');port_label('output',1,'dout');\nfprintf('','COMMENT: end icon text');"
@@ -2543,10 +2672,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Shared Memory1"
-	  SID			  "164:473"
+	  SID			  "164:625"
 	  Ports			  [3, 1]
-	  Position		  [605, 1044, 685, 1136]
-	  ZOrder		  425
+	  Position		  [885, 1304, 965, 1396]
+	  ZOrder		  577
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Shared Memory"
@@ -2593,10 +2722,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Shared Memory2"
-	  SID			  "164:474"
+	  SID			  "164:626"
 	  Ports			  [3, 1]
-	  Position		  [605, 1164, 685, 1256]
-	  ZOrder		  426
+	  Position		  [885, 1444, 965, 1536]
+	  ZOrder		  578
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Shared Memory"
@@ -2643,10 +2772,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Shared Memory3"
-	  SID			  "164:475"
+	  SID			  "164:627"
 	  Ports			  [3, 1]
-	  Position		  [605, 1285, 685, 1375]
-	  ZOrder		  427
+	  Position		  [885, 1584, 965, 1676]
+	  ZOrder		  579
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Shared Memory"
@@ -2674,12 +2803,12 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "shmem"
-	  sg_icon_stat		  "80,90,3,1,white,blue,0,bf435243,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 80 80 0 0 ],[0 0 90 90 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 80 80 0 0 ],[0 0 90 90 0 ]);\npatch([15.525 31.42 42.42 53.42 64.42 42.42 26.525 15.525 ],[57.21 57.2"
-	  "1 68.21 57.21 68.21 68.21 68.21 57.21 ],[1 1 1 ]);\npatch([26.525 42.42 31.42 15.525 26.525 ],[46.21 46.21 57.21 57"
-	  ".21 46.21 ],[0.931 0.946 0.973 ]);\npatch([15.525 31.42 42.42 26.525 15.525 ],[35.21 35.21 46.21 46.21 35.21 ],[1 1"
-	  " 1 ]);\npatch([26.525 64.42 53.42 42.42 31.42 15.525 26.525 ],[24.21 24.21 35.21 24.21 35.21 35.21 24.21 ],[0.931 0"
+	  sg_icon_stat		  "80,92,3,1,white,blue,0,bf435243,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 80 80 0 0 ],[0 0 92 92 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 80 80 0 0 ],[0 0 92 92 0 ]);\npatch([15.525 31.42 42.42 53.42 64.42 42.42 26.525 15.525 ],[58.21 58.2"
+	  "1 69.21 58.21 69.21 69.21 69.21 58.21 ],[1 1 1 ]);\npatch([26.525 42.42 31.42 15.525 26.525 ],[47.21 47.21 58.21 58"
+	  ".21 47.21 ],[0.931 0.946 0.973 ]);\npatch([15.525 31.42 42.42 26.525 15.525 ],[36.21 36.21 47.21 47.21 36.21 ],[1 1"
+	  " 1 ]);\npatch([26.525 64.42 53.42 42.42 31.42 15.525 26.525 ],[25.21 25.21 36.21 25.21 36.21 36.21 25.21 ],[0.931 0"
 	  ".946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
 	  "port_label('input',1,'addr');\ncolor('black');port_label('input',2,'din');\ncolor('black');port_label('input',3,'we"
 	  "');\ncolor('black');port_label('output',1,'dout');\nfprintf('','COMMENT: end icon text');"
@@ -2693,10 +2822,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Sl_addrAck"
-	  SID			  "164:428"
+	  SID			  "164:579"
 	  Ports			  [1, 1]
-	  Position		  [460, 50, 520, 70]
-	  ZOrder		  380
+	  Position		  [670, 70, 730, 90]
+	  ZOrder		  531
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -2729,10 +2858,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Sl_rdComp"
-	  SID			  "164:430"
+	  SID			  "164:581"
 	  Ports			  [1, 1]
-	  Position		  [460, 150, 520, 170]
-	  ZOrder		  382
+	  Position		  [670, 170, 730, 190]
+	  ZOrder		  533
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -2765,10 +2894,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Sl_rdDAck"
-	  SID			  "164:432"
+	  SID			  "164:583"
 	  Ports			  [1, 1]
-	  Position		  [460, 1110, 520, 1130]
-	  ZOrder		  384
+	  Position		  [670, 1375, 730, 1395]
+	  ZOrder		  535
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -2801,10 +2930,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Sl_rdDBus"
-	  SID			  "164:434"
+	  SID			  "164:585"
 	  Ports			  [1, 1]
-	  Position		  [460, 1355, 520, 1375]
-	  ZOrder		  386
+	  Position		  [670, 1675, 730, 1695]
+	  ZOrder		  537
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -2837,10 +2966,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Sl_wait"
-	  SID			  "164:436"
+	  SID			  "164:587"
 	  Ports			  [1, 1]
-	  Position		  [110, 360, 170, 380]
-	  ZOrder		  388
+	  Position		  [180, 555, 240, 575]
+	  ZOrder		  539
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -2873,10 +3002,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Sl_wrComp"
-	  SID			  "164:440"
+	  SID			  "164:591"
 	  Ports			  [1, 1]
-	  Position		  [460, 540, 520, 560]
-	  ZOrder		  392
+	  Position		  [670, 510, 730, 530]
+	  ZOrder		  543
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -2909,10 +3038,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "Sl_wrDAck"
-	  SID			  "164:438"
+	  SID			  "164:589"
 	  Ports			  [1, 1]
-	  Position		  [460, 295, 520, 315]
-	  ZOrder		  390
+	  Position		  [670, 305, 730, 325]
+	  ZOrder		  541
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -2945,130 +3074,130 @@ Model {
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator"
-	  SID			  "164:427"
-	  Position		  [635, 30, 655, 50]
-	  ZOrder		  379
+	  SID			  "164:578"
+	  Position		  [915, 50, 935, 70]
+	  ZOrder		  530
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator1"
-	  SID			  "164:429"
-	  Position		  [635, 80, 655, 100]
-	  ZOrder		  381
+	  SID			  "164:580"
+	  Position		  [915, 120, 935, 140]
+	  ZOrder		  532
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator10"
-	  SID			  "164:463"
-	  Position		  [720, 505, 740, 525]
-	  ZOrder		  415
+	  SID			  "164:615"
+	  Position		  [1065, 655, 1085, 675]
+	  ZOrder		  567
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator11"
-	  SID			  "164:465"
-	  Position		  [720, 595, 740, 615]
-	  ZOrder		  417
+	  SID			  "164:617"
+	  Position		  [1065, 760, 1085, 780]
+	  ZOrder		  569
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator12"
-	  SID			  "164:467"
-	  Position		  [720, 680, 740, 700]
-	  ZOrder		  419
+	  SID			  "164:619"
+	  Position		  [1065, 865, 1085, 885]
+	  ZOrder		  571
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator13"
-	  SID			  "164:469"
-	  Position		  [720, 765, 740, 785]
-	  ZOrder		  421
+	  SID			  "164:621"
+	  Position		  [1065, 975, 1085, 995]
+	  ZOrder		  573
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator14"
-	  SID			  "164:471"
-	  Position		  [720, 855, 740, 875]
-	  ZOrder		  423
+	  SID			  "164:623"
+	  Position		  [1065, 1080, 1085, 1100]
+	  ZOrder		  575
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator2"
-	  SID			  "164:431"
-	  Position		  [635, 1405, 655, 1425]
-	  ZOrder		  383
+	  SID			  "164:582"
+	  Position		  [915, 1725, 935, 1745]
+	  ZOrder		  534
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator3"
-	  SID			  "164:433"
-	  Position		  [635, 1455, 655, 1475]
-	  ZOrder		  385
+	  SID			  "164:584"
+	  Position		  [915, 1795, 935, 1815]
+	  ZOrder		  536
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator4"
-	  SID			  "164:435"
-	  Position		  [280, 360, 300, 380]
-	  ZOrder		  387
+	  SID			  "164:586"
+	  Position		  [420, 555, 440, 575]
+	  ZOrder		  538
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator5"
-	  SID			  "164:437"
-	  Position		  [635, 130, 655, 150]
-	  ZOrder		  389
+	  SID			  "164:588"
+	  Position		  [915, 185, 935, 205]
+	  ZOrder		  540
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator6"
-	  SID			  "164:439"
-	  Position		  [635, 180, 655, 200]
-	  ZOrder		  391
+	  SID			  "164:590"
+	  Position		  [915, 255, 935, 275]
+	  ZOrder		  542
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator7"
-	  SID			  "164:457"
-	  Position		  [720, 245, 740, 265]
-	  ZOrder		  409
+	  SID			  "164:609"
+	  Position		  [1065, 340, 1085, 360]
+	  ZOrder		  561
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator8"
-	  SID			  "164:459"
-	  Position		  [720, 335, 740, 355]
-	  ZOrder		  411
+	  SID			  "164:611"
+	  Position		  [1065, 445, 1085, 465]
+	  ZOrder		  563
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator9"
-	  SID			  "164:461"
-	  Position		  [720, 420, 740, 440]
-	  ZOrder		  413
+	  SID			  "164:613"
+	  Position		  [1065, 550, 1085, 570]
+	  ZOrder		  565
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "To Register"
-	  SID			  "164:456"
+	  SID			  "164:608"
 	  Ports			  [2, 1]
-	  Position		  [615, 227, 675, 283]
-	  ZOrder		  408
+	  Position		  [895, 322, 955, 378]
+	  ZOrder		  560
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/To Register"
@@ -3108,10 +3237,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "To Register1"
-	  SID			  "164:458"
+	  SID			  "164:610"
 	  Ports			  [2, 1]
-	  Position		  [615, 317, 675, 373]
-	  ZOrder		  410
+	  Position		  [895, 427, 955, 483]
+	  ZOrder		  562
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/To Register"
@@ -3151,10 +3280,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "To Register2"
-	  SID			  "164:460"
+	  SID			  "164:612"
 	  Ports			  [2, 1]
-	  Position		  [615, 402, 675, 458]
-	  ZOrder		  412
+	  Position		  [895, 532, 955, 588]
+	  ZOrder		  564
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/To Register"
@@ -3194,10 +3323,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "To Register3"
-	  SID			  "164:462"
+	  SID			  "164:614"
 	  Ports			  [2, 1]
-	  Position		  [615, 487, 675, 543]
-	  ZOrder		  414
+	  Position		  [895, 637, 955, 693]
+	  ZOrder		  566
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/To Register"
@@ -3237,10 +3366,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "To Register4"
-	  SID			  "164:464"
+	  SID			  "164:616"
 	  Ports			  [2, 1]
-	  Position		  [615, 577, 675, 633]
-	  ZOrder		  416
+	  Position		  [895, 742, 955, 798]
+	  ZOrder		  568
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/To Register"
@@ -3280,10 +3409,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "To Register5"
-	  SID			  "164:466"
+	  SID			  "164:618"
 	  Ports			  [2, 1]
-	  Position		  [615, 662, 675, 718]
-	  ZOrder		  418
+	  Position		  [895, 847, 955, 903]
+	  ZOrder		  570
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/To Register"
@@ -3323,10 +3452,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "To Register6"
-	  SID			  "164:468"
+	  SID			  "164:620"
 	  Ports			  [2, 1]
-	  Position		  [615, 747, 675, 803]
-	  ZOrder		  420
+	  Position		  [895, 957, 955, 1013]
+	  ZOrder		  572
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/To Register"
@@ -3366,10 +3495,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "To Register7"
-	  SID			  "164:470"
+	  SID			  "164:622"
 	  Ports			  [2, 1]
-	  Position		  [615, 837, 675, 893]
-	  ZOrder		  422
+	  Position		  [895, 1062, 955, 1118]
+	  ZOrder		  574
 	  AttributesFormatString  "<< %<shared_memory_name> >>"
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/To Register"
@@ -3409,10 +3538,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "plb_decode"
-	  SID			  "164:454"
+	  SID			  "164:605"
 	  Ports			  [7, 9]
-	  Position		  [205, 409, 375, 821]
-	  ZOrder		  406
+	  Position		  [345, 624, 515, 1036]
+	  ZOrder		  557
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/MCode"
 	  SourceType		  "Xilinx MCode Block Block"
@@ -3530,10 +3659,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "plb_memmap"
-	  SID			  "164:476"
-	  Ports			  [10, 29]
-	  Position		  [405, 725, 575, 975]
-	  ZOrder		  428
+	  SID			  "164:628"
+	  Ports			  [11, 29]
+	  Position		  [615, 950, 785, 1200]
+	  ZOrder		  580
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/MCode"
 	  SourceType		  "Xilinx MCode Block Block"
@@ -3553,132 +3682,133 @@ Model {
 	  "_regB_din, sm_dtoa0_data_regB_en, sm_dtoa0_data_regA_din, sm_dtoa0_data_regA_en, sm_AtoD_DataMem_addr, sm_AtoD_Data"
 	  "Mem_din, sm_AtoD_DataMem_we, sm_E1_filter_RAM_addr, sm_E1_filter_RAM_din, sm_E1_filter_RAM_we, sm_E1_Data_RAM_addr,"
 	  " sm_E1_Data_RAM_din, sm_E1_Data_RAM_we, sm_E1_template_RAM_addr, sm_E1_template_RAM_din, sm_E1_template_RAM_we] = p"
-	  "lb_memmap(wrDBus, bankAddr, linearAddr, RNWReg, addrAck, sm_ESP_Status_Reg, sm_AtoD_DataMem, sm_E1_filter_RAM, sm_E"
-	  "1_Data_RAM, sm_E1_template_RAM)\n\n\n% connvert the input data to UFix_32_0 (the bus data type)\n% 'From Register' "
-	  "blocks\n% sm_ESP_Status_Reg_bus = xfix({xlUnsigned, 32, 0}, 0);\nsm_ESP_Status_Reg_bus = xl_force(sm_ESP_Status_Reg"
-	  ", xlUnsigned, 0);\n\n% 'To Register' blocks\n\n% 'From FIFO' blocks\n% 'To FIFO' blocks\n% 'Shared Memory' blocks\n"
-	  "% AtoD_DataMem_bus = xfix({xlUnsigned, 32, 0}, 0);\nsm_AtoD_DataMem_bus = xl_force(sm_AtoD_DataMem, xlUnsigned, 0);"
-	  "\n\n% E1_filter_RAM_bus = xfix({xlUnsigned, 32, 0}, 0);\nsm_E1_filter_RAM_bus = xl_force(sm_E1_filter_RAM, xlUnsign"
-	  "ed, 0);\n\n% E1_Data_RAM_bus = xfix({xlUnsigned, 32, 0}, 0);\nsm_E1_Data_RAM_bus = xl_force(sm_E1_Data_RAM, xlUnsig"
-	  "ned, 0);\n\n% E1_template_RAM_bus = xfix({xlUnsigned, 32, 0}, 0);\nsm_E1_template_RAM_bus = xl_force(sm_E1_template"
-	  "_RAM, xlUnsigned, 0);\n\n\n% 'dout' ports of 'From Register' blocks\n\n% registered register mux output\npersistent"
-	  " reg_bank_out_reg; reg_bank_out_reg = xl_state(0, {xlUnsigned, 32, 0});\nreg_bank_out = reg_bank_out_reg;\n\n% dire"
-	  "ct connection if there is one 'From Reg' but no 'To Reg'\nreg_bank_out_reg = sm_ESP_Status_Reg_bus;\n\n% 'From FIFO"
-	  "' and 'To FIFO' blocks\n\n\n\n\n\nopCode = xl_concat(addrAck, RNWReg, bankAddr, linearAddr);\n\n% 'Shared Memory' b"
-	  "locks\n\nsm_AtoD_DataMem_sel_value = xl_concat(xl_slice(linearAddr, ...\n                                        xl"
-	  "_nbits(linearAddr) - 1, ...\n                                        10) ...\n                                    )"
-	  ";\nif sm_AtoD_DataMem_sel_value == xfix({xlUnsigned, ...\n                                        xl_nbits(linearAd"
-	  "dr) - 10, ...\n                                        0}, ...\n                                        0);\n    sm"
-	  "_AtoD_DataMem_sel = true;\nelse\n    sm_AtoD_DataMem_sel = false;\nend\nsm_E1_filter_RAM_sel_value = xl_concat(xl_s"
-	  "lice(linearAddr, ...\n                                        xl_nbits(linearAddr) - 1, ...\n                      "
-	  "                  7) ...\n                                    );\nif sm_E1_filter_RAM_sel_value == xfix({xlUnsigned"
-	  ", ...\n                                        xl_nbits(linearAddr) - 7, ...\n                                     "
-	  "   0}, ...\n                                        8);\n    sm_E1_filter_RAM_sel = true;\nelse\n    sm_E1_filter_R"
-	  "AM_sel = false;\nend\nsm_E1_Data_RAM_sel_value = xl_concat(xl_slice(linearAddr, ...\n                              "
-	  "          xl_nbits(linearAddr) - 1, ...\n                                        7) ...\n                          "
-	  "          );\nif sm_E1_Data_RAM_sel_value == xfix({xlUnsigned, ...\n                                        xl_nbit"
-	  "s(linearAddr) - 7, ...\n                                        0}, ...\n                                        9)"
-	  ";\n    sm_E1_Data_RAM_sel = true;\nelse\n    sm_E1_Data_RAM_sel = false;\nend\nsm_E1_template_RAM_sel_value = xl_co"
-	  "ncat(xl_slice(linearAddr, ...\n                                        xl_nbits(linearAddr) - 1, ...\n             "
-	  "                           7) ...\n                                    );\nif sm_E1_template_RAM_sel_value == xfix("
-	  "{xlUnsigned, ...\n                                        xl_nbits(linearAddr) - 7, ...\n                          "
-	  "              0}, ...\n                                        10);\n    sm_E1_template_RAM_sel = true;\nelse\n    "
-	  "sm_E1_template_RAM_sel = false;\nend\n\n\n% registered Shared Memory mux output\npersistent ram_bank_out_reg; ram_b"
-	  "ank_out_reg = xl_state(0, {xlUnsigned, 32, 0});\nram_bank_out = ram_bank_out_reg;\nif sm_AtoD_DataMem_sel\n    ram_"
-	  "bank_out_reg = sm_AtoD_DataMem_bus;\nelseif sm_E1_filter_RAM_sel\n    ram_bank_out_reg = sm_E1_filter_RAM_bus;\nels"
-	  "eif sm_E1_Data_RAM_sel\n    ram_bank_out_reg = sm_E1_Data_RAM_bus;\nelseif sm_E1_template_RAM_sel\n    ram_bank_out"
-	  "_reg = sm_E1_template_RAM_bus;\nend\n\n% 'din' ports of 'Shared Memory' blocks\nsm_AtoD_DataMem_din = xl_force(xl_s"
-	  "lice(wrDBus, 16 - 1, 0), ...\n                                 xlUnsigned, ...\n                                 0)"
-	  ";\nsm_E1_filter_RAM_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                                 xlSigned, ..."
-	  "\n                                 15);\nsm_E1_Data_RAM_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n          "
-	  "                       xlSigned, ...\n                                 15);\nsm_E1_template_RAM_din = xl_force(xl_s"
-	  "lice(wrDBus, 16 - 1, 0), ...\n                                 xlSigned, ...\n                                 15);"
-	  "\n\n\n% 'we' ports of 'Shared Memory' blocks\npersistent sm_AtoD_DataMem_we_reg; sm_AtoD_DataMem_we_reg = xl_state("
-	  "false, {xlBoolean});\nsm_AtoD_DataMem_we = sm_AtoD_DataMem_we_reg;\nopCode_sm_AtoD_DataMem = xl_concat(addrAck, ..."
-	  "\n                                     RNWReg, ...\n                                     bankAddr, ...\n           "
-	  "                          xl_slice(linearAddr, ...\n                                              xl_nbits(linearAd"
-	  "dr) - 1, ...\n                                              10) ...\n                                    );\nif opC"
-	  "ode_sm_AtoD_DataMem == xl_concat(xfix({xlUnsigned, 4, 0}, 8), ...\n                                         xfix({x"
-	  "lUnsigned, ...\n                                               xl_nbits(linearAddr) - 10, ...\n                    "
-	  "                           0}, ...\n                                               0) ...\n                        "
-	  "                );\n    sm_AtoD_DataMem_we_reg = true;\nelse\n    sm_AtoD_DataMem_we_reg = false;\nend\npersistent "
-	  "sm_E1_filter_RAM_we_reg; sm_E1_filter_RAM_we_reg = xl_state(false, {xlBoolean});\nsm_E1_filter_RAM_we = sm_E1_filte"
-	  "r_RAM_we_reg;\nopCode_sm_E1_filter_RAM = xl_concat(addrAck, ...\n                                     RNWReg, ...\n"
-	  "                                     bankAddr, ...\n                                     xl_slice(linearAddr, ...\n"
-	  "                                              xl_nbits(linearAddr) - 1, ...\n                                      "
-	  "        7) ...\n                                    );\nif opCode_sm_E1_filter_RAM == xl_concat(xfix({xlUnsigned, 4"
-	  ", 0}, 8), ...\n                                         xfix({xlUnsigned, ...\n                                    "
-	  "           xl_nbits(linearAddr) - 7, ...\n                                               0}, ...\n                 "
-	  "                              8) ...\n                                        );\n    sm_E1_filter_RAM_we_reg = tru"
-	  "e;\nelse\n    sm_E1_filter_RAM_we_reg = false;\nend\npersistent sm_E1_Data_RAM_we_reg; sm_E1_Data_RAM_we_reg = xl_s"
-	  "tate(false, {xlBoolean});\nsm_E1_Data_RAM_we = sm_E1_Data_RAM_we_reg;\nopCode_sm_E1_Data_RAM = xl_concat(addrAck, ."
-	  "..\n                                     RNWReg, ...\n                                     bankAddr, ...\n         "
-	  "                            xl_slice(linearAddr, ...\n                                              xl_nbits(linear"
-	  "Addr) - 1, ...\n                                              7) ...\n                                    );\nif op"
-	  "Code_sm_E1_Data_RAM == xl_concat(xfix({xlUnsigned, 4, 0}, 8), ...\n                                         xfix({x"
-	  "lUnsigned, ...\n                                               xl_nbits(linearAddr) - 7, ...\n                     "
-	  "                          0}, ...\n                                               9) ...\n                         "
-	  "               );\n    sm_E1_Data_RAM_we_reg = true;\nelse\n    sm_E1_Data_RAM_we_reg = false;\nend\npersistent sm_"
-	  "E1_template_RAM_we_reg; sm_E1_template_RAM_we_reg = xl_state(false, {xlBoolean});\nsm_E1_template_RAM_we = sm_E1_te"
-	  "mplate_RAM_we_reg;\nopCode_sm_E1_template_RAM = xl_concat(addrAck, ...\n                                     RNWReg"
-	  ", ...\n                                     bankAddr, ...\n                                     xl_slice(linearAddr"
-	  ", ...\n                                              xl_nbits(linearAddr) - 1, ...\n                               "
-	  "               7) ...\n                                    );\nif opCode_sm_E1_template_RAM == xl_concat(xfix({xlUn"
-	  "signed, 4, 0}, 8), ...\n                                         xfix({xlUnsigned, ...\n                           "
-	  "                    xl_nbits(linearAddr) - 7, ...\n                                               0}, ...\n        "
-	  "                                       10) ...\n                                        );\n    sm_E1_template_RAM_"
-	  "we_reg = true;\nelse\n    sm_E1_template_RAM_we_reg = false;\nend\n\n\n% 'addr' ports of 'Shared Memory' blocks\npe"
-	  "rsistent sm_AtoD_DataMem_addr_reg; \nsm_AtoD_DataMem_addr_reg = xl_state(0, {xlUnsigned, 10, 0});\nsm_AtoD_DataMem_"
-	  "addr = sm_AtoD_DataMem_addr_reg;\nif addrAck == 1\n    sm_AtoD_DataMem_addr_reg = xl_slice(linearAddr, 10, 0);\nels"
-	  "e\n    sm_AtoD_DataMem_addr_reg = sm_AtoD_DataMem_addr_reg;\nend\npersistent sm_E1_filter_RAM_addr_reg; \nsm_E1_fil"
-	  "ter_RAM_addr_reg = xl_state(0, {xlUnsigned, 7, 0});\nsm_E1_filter_RAM_addr = sm_E1_filter_RAM_addr_reg;\nif addrAck"
-	  " == 1\n    sm_E1_filter_RAM_addr_reg = xl_slice(linearAddr, 7, 0);\nelse\n    sm_E1_filter_RAM_addr_reg = sm_E1_fil"
-	  "ter_RAM_addr_reg;\nend\npersistent sm_E1_Data_RAM_addr_reg; \nsm_E1_Data_RAM_addr_reg = xl_state(0, {xlUnsigned, 7,"
-	  " 0});\nsm_E1_Data_RAM_addr = sm_E1_Data_RAM_addr_reg;\nif addrAck == 1\n    sm_E1_Data_RAM_addr_reg = xl_slice(line"
-	  "arAddr, 7, 0);\nelse\n    sm_E1_Data_RAM_addr_reg = sm_E1_Data_RAM_addr_reg;\nend\npersistent sm_E1_template_RAM_ad"
-	  "dr_reg; \nsm_E1_template_RAM_addr_reg = xl_state(0, {xlUnsigned, 7, 0});\nsm_E1_template_RAM_addr = sm_E1_template_"
-	  "RAM_addr_reg;\nif addrAck == 1\n    sm_E1_template_RAM_addr_reg = xl_slice(linearAddr, 7, 0);\nelse\n    sm_E1_temp"
-	  "late_RAM_addr_reg = sm_E1_template_RAM_addr_reg;\nend\n\n\n% 're' ports of 'From FIFO' blocks\n\n\n% 'en' ports of "
-	  "'To Register' blocks\nif opCode == xl_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n                       xfix({xlUnsi"
-	  "gned, xl_nbits(linearAddr), 0}, 0))\n    sm_E1_template_size_en = true;\nelse\n    sm_E1_template_size_en = false;\n"
-	  "end\nif opCode == xl_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n                       xfix({xlUnsigned, xl_nbits(li"
-	  "nearAddr), 0}, 1))\n    sm_ESP_Contol_Reg_en = true;\nelse\n    sm_ESP_Contol_Reg_en = false;\nend\nif opCode == xl"
-	  "_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n                       xfix({xlUnsigned, xl_nbits(linearAddr), 0}, 2))\n"
-	  "    sm_E1_samples_to_skip_en = true;\nelse\n    sm_E1_samples_to_skip_en = false;\nend\nif opCode == xl_concat(xfix"
-	  "({xlUnsigned, 4, 0}, 10), ...\n                       xfix({xlUnsigned, xl_nbits(linearAddr), 0}, 3))\n    sm_E1_fi"
-	  "lter_length_en = true;\nelse\n    sm_E1_filter_length_en = false;\nend\nif opCode == xl_concat(xfix({xlUnsigned, 4,"
-	  " 0}, 10), ...\n                       xfix({xlUnsigned, xl_nbits(linearAddr), 0}, 4))\n    sm_dtoa1_data_regB_en = "
-	  "true;\nelse\n    sm_dtoa1_data_regB_en = false;\nend\nif opCode == xl_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n   "
-	  "                    xfix({xlUnsigned, xl_nbits(linearAddr), 0}, 5))\n    sm_dtoa1_data_regA_en = true;\nelse\n    s"
-	  "m_dtoa1_data_regA_en = false;\nend\nif opCode == xl_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n                     "
-	  "  xfix({xlUnsigned, xl_nbits(linearAddr), 0}, 6))\n    sm_dtoa0_data_regB_en = true;\nelse\n    sm_dtoa0_data_regB_"
-	  "en = false;\nend\nif opCode == xl_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n                       xfix({xlUnsigned"
-	  ", xl_nbits(linearAddr), 0}, 7))\n    sm_dtoa0_data_regA_en = true;\nelse\n    sm_dtoa0_data_regA_en = false;\nend\n"
-	  "\n\n% 'din' ports of 'To FIFO' blocks\n\n\n% 'we' ports of 'To FIFO' blocks\n\n\n% 'din' ports of 'To Register' blo"
-	  "cks\nsm_E1_template_size_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                                 xlUnsign"
-	  "ed, ...\n                                 0);\nsm_ESP_Contol_Reg_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n "
-	  "                                xlUnsigned, ...\n                                 0);\nsm_E1_samples_to_skip_din = "
-	  "xl_force(xl_slice(wrDBus, 8 - 1, 0), ...\n                                 xlUnsigned, ...\n                       "
-	  "          0);\nsm_E1_filter_length_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                               "
-	  "  xlUnsigned, ...\n                                 0);\nsm_dtoa1_data_regB_din = xl_force(xl_slice(wrDBus, 16 - 1,"
-	  " 0), ...\n                                 xlUnsigned, ...\n                                 0);\nsm_dtoa1_data_reg"
-	  "A_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                                 xlUnsigned, ...\n              "
-	  "                   0);\nsm_dtoa0_data_regB_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                       "
-	  "          xlUnsigned, ...\n                                 0);\nsm_dtoa0_data_regA_din = xl_force(xl_slice(wrDBus,"
-	  " 16 - 1, 0), ...\n                                 xlUnsigned, ...\n                                 0);\n\n\npersi"
-	  "stent read_bank_out_reg; read_bank_out_reg = xl_state(0, {xlUnsigned, 32, 0});\nread_bank_out = read_bank_out_reg;\n"
-	  "\npersistent bankAddr_reg; bankAddr_reg = xl_state(0, bankAddr);\n\nif bankAddr_reg == 0\n    % Bank 0: Shared Memo"
-	  "ries\n    read_bank_out_reg = ram_bank_out;\nelseif bankAddr_reg == 1\n    % Bank 1: From/To FIFOs\n    read_bank_o"
-	  "ut_reg =  0;\nelseif bankAddr_reg == 2\n    % Bank 2: From/To Registers\n    read_bank_out_reg = reg_bank_out;\nels"
-	  "eif bankAddr_reg == 3\n    % Bank 3: Configuration Registers\n    read_bank_out_reg = 0;\nend\n\nbankAddr_reg = ban"
-	  "kAddr;\n"
+	  "lb_memmap(wrDBus, bankAddr, linearAddr, RNWReg, addrAck, sm_ESP_Status_Reg, sm_E1_Template_Acc_Reg, sm_AtoD_DataMem"
+	  ", sm_E1_filter_RAM, sm_E1_Data_RAM, sm_E1_template_RAM)\n\n\n% connvert the input data to UFix_32_0 (the bus data t"
+	  "ype)\n% 'From Register' blocks\n% sm_ESP_Status_Reg_bus = xfix({xlUnsigned, 32, 0}, 0);\nsm_ESP_Status_Reg_bus = xl"
+	  "_force(sm_ESP_Status_Reg, xlUnsigned, 0);\n\n% sm_E1_Template_Acc_Reg_bus = xfix({xlUnsigned, 32, 0}, 0);\nsm_E1_Te"
+	  "mplate_Acc_Reg_bus = xl_force(sm_E1_Template_Acc_Reg, xlUnsigned, 0);\n\n% 'To Register' blocks\n\n% 'From FIFO' bl"
+	  "ocks\n% 'To FIFO' blocks\n% 'Shared Memory' blocks\n% AtoD_DataMem_bus = xfix({xlUnsigned, 32, 0}, 0);\nsm_AtoD_Dat"
+	  "aMem_bus = xl_force(sm_AtoD_DataMem, xlUnsigned, 0);\n\n% E1_filter_RAM_bus = xfix({xlUnsigned, 32, 0}, 0);\nsm_E1_"
+	  "filter_RAM_bus = xl_force(sm_E1_filter_RAM, xlUnsigned, 0);\n\n% E1_Data_RAM_bus = xfix({xlUnsigned, 32, 0}, 0);\ns"
+	  "m_E1_Data_RAM_bus = xl_force(sm_E1_Data_RAM, xlUnsigned, 0);\n\n% E1_template_RAM_bus = xfix({xlUnsigned, 32, 0}, 0"
+	  ");\nsm_E1_template_RAM_bus = xl_force(sm_E1_template_RAM, xlUnsigned, 0);\n\n\n% 'dout' ports of 'From Register' bl"
+	  "ocks\n\n% registered register mux output\npersistent reg_bank_out_reg; reg_bank_out_reg = xl_state(0, {xlUnsigned, "
+	  "32, 0});\nreg_bank_out = reg_bank_out_reg;\n\nif linearAddr == 0\n    reg_bank_out_reg = sm_ESP_Status_Reg_bus;\nel"
+	  "seif linearAddr == 1\n    reg_bank_out_reg = sm_E1_Template_Acc_Reg_bus;\n\nend\n\n\n% 'From FIFO' and 'To FIFO' bl"
+	  "ocks\n\n\n\n\n\nopCode = xl_concat(addrAck, RNWReg, bankAddr, linearAddr);\n\n% 'Shared Memory' blocks\n\nsm_AtoD_D"
+	  "ataMem_sel_value = xl_concat(xl_slice(linearAddr, ...\n                                        xl_nbits(linearAddr)"
+	  " - 1, ...\n                                        10) ...\n                                    );\nif sm_AtoD_Data"
+	  "Mem_sel_value == xfix({xlUnsigned, ...\n                                        xl_nbits(linearAddr) - 10, ...\n   "
+	  "                                     0}, ...\n                                        0);\n    sm_AtoD_DataMem_sel "
+	  "= true;\nelse\n    sm_AtoD_DataMem_sel = false;\nend\nsm_E1_filter_RAM_sel_value = xl_concat(xl_slice(linearAddr, ."
+	  "..\n                                        xl_nbits(linearAddr) - 1, ...\n                                        "
+	  "7) ...\n                                    );\nif sm_E1_filter_RAM_sel_value == xfix({xlUnsigned, ...\n           "
+	  "                             xl_nbits(linearAddr) - 7, ...\n                                        0}, ...\n      "
+	  "                                  8);\n    sm_E1_filter_RAM_sel = true;\nelse\n    sm_E1_filter_RAM_sel = false;\ne"
+	  "nd\nsm_E1_Data_RAM_sel_value = xl_concat(xl_slice(linearAddr, ...\n                                        xl_nbits"
+	  "(linearAddr) - 1, ...\n                                        7) ...\n                                    );\nif s"
+	  "m_E1_Data_RAM_sel_value == xfix({xlUnsigned, ...\n                                        xl_nbits(linearAddr) - 7,"
+	  " ...\n                                        0}, ...\n                                        9);\n    sm_E1_Data_"
+	  "RAM_sel = true;\nelse\n    sm_E1_Data_RAM_sel = false;\nend\nsm_E1_template_RAM_sel_value = xl_concat(xl_slice(line"
+	  "arAddr, ...\n                                        xl_nbits(linearAddr) - 1, ...\n                               "
+	  "         7) ...\n                                    );\nif sm_E1_template_RAM_sel_value == xfix({xlUnsigned, ...\n"
+	  "                                        xl_nbits(linearAddr) - 7, ...\n                                        0}, "
+	  "...\n                                        10);\n    sm_E1_template_RAM_sel = true;\nelse\n    sm_E1_template_RAM"
+	  "_sel = false;\nend\n\n\n% registered Shared Memory mux output\npersistent ram_bank_out_reg; ram_bank_out_reg = xl_s"
+	  "tate(0, {xlUnsigned, 32, 0});\nram_bank_out = ram_bank_out_reg;\nif sm_AtoD_DataMem_sel\n    ram_bank_out_reg = sm_"
+	  "AtoD_DataMem_bus;\nelseif sm_E1_filter_RAM_sel\n    ram_bank_out_reg = sm_E1_filter_RAM_bus;\nelseif sm_E1_Data_RAM"
+	  "_sel\n    ram_bank_out_reg = sm_E1_Data_RAM_bus;\nelseif sm_E1_template_RAM_sel\n    ram_bank_out_reg = sm_E1_templ"
+	  "ate_RAM_bus;\nend\n\n% 'din' ports of 'Shared Memory' blocks\nsm_AtoD_DataMem_din = xl_force(xl_slice(wrDBus, 16 - "
+	  "1, 0), ...\n                                 xlUnsigned, ...\n                                 0);\nsm_E1_filter_RA"
+	  "M_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                                 xlSigned, ...\n                "
+	  "                 15);\nsm_E1_Data_RAM_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                            "
+	  "     xlSigned, ...\n                                 15);\nsm_E1_template_RAM_din = xl_force(xl_slice(wrDBus, 16 - "
+	  "1, 0), ...\n                                 xlSigned, ...\n                                 15);\n\n\n% 'we' ports"
+	  " of 'Shared Memory' blocks\npersistent sm_AtoD_DataMem_we_reg; sm_AtoD_DataMem_we_reg = xl_state(false, {xlBoolean}"
+	  ");\nsm_AtoD_DataMem_we = sm_AtoD_DataMem_we_reg;\nopCode_sm_AtoD_DataMem = xl_concat(addrAck, ...\n                "
+	  "                     RNWReg, ...\n                                     bankAddr, ...\n                             "
+	  "        xl_slice(linearAddr, ...\n                                              xl_nbits(linearAddr) - 1, ...\n    "
+	  "                                          10) ...\n                                    );\nif opCode_sm_AtoD_DataMe"
+	  "m == xl_concat(xfix({xlUnsigned, 4, 0}, 8), ...\n                                         xfix({xlUnsigned, ...\n  "
+	  "                                             xl_nbits(linearAddr) - 10, ...\n                                      "
+	  "         0}, ...\n                                               0) ...\n                                        );"
+	  "\n    sm_AtoD_DataMem_we_reg = true;\nelse\n    sm_AtoD_DataMem_we_reg = false;\nend\npersistent sm_E1_filter_RAM_w"
+	  "e_reg; sm_E1_filter_RAM_we_reg = xl_state(false, {xlBoolean});\nsm_E1_filter_RAM_we = sm_E1_filter_RAM_we_reg;\nopC"
+	  "ode_sm_E1_filter_RAM = xl_concat(addrAck, ...\n                                     RNWReg, ...\n                  "
+	  "                   bankAddr, ...\n                                     xl_slice(linearAddr, ...\n                  "
+	  "                            xl_nbits(linearAddr) - 1, ...\n                                              7) ...\n  "
+	  "                                  );\nif opCode_sm_E1_filter_RAM == xl_concat(xfix({xlUnsigned, 4, 0}, 8), ...\n   "
+	  "                                      xfix({xlUnsigned, ...\n                                               xl_nbit"
+	  "s(linearAddr) - 7, ...\n                                               0}, ...\n                                   "
+	  "            8) ...\n                                        );\n    sm_E1_filter_RAM_we_reg = true;\nelse\n    sm_E"
+	  "1_filter_RAM_we_reg = false;\nend\npersistent sm_E1_Data_RAM_we_reg; sm_E1_Data_RAM_we_reg = xl_state(false, {xlBoo"
+	  "lean});\nsm_E1_Data_RAM_we = sm_E1_Data_RAM_we_reg;\nopCode_sm_E1_Data_RAM = xl_concat(addrAck, ...\n              "
+	  "                       RNWReg, ...\n                                     bankAddr, ...\n                           "
+	  "          xl_slice(linearAddr, ...\n                                              xl_nbits(linearAddr) - 1, ...\n  "
+	  "                                            7) ...\n                                    );\nif opCode_sm_E1_Data_RA"
+	  "M == xl_concat(xfix({xlUnsigned, 4, 0}, 8), ...\n                                         xfix({xlUnsigned, ...\n  "
+	  "                                             xl_nbits(linearAddr) - 7, ...\n                                       "
+	  "        0}, ...\n                                               9) ...\n                                        );\n"
+	  "    sm_E1_Data_RAM_we_reg = true;\nelse\n    sm_E1_Data_RAM_we_reg = false;\nend\npersistent sm_E1_template_RAM_we_"
+	  "reg; sm_E1_template_RAM_we_reg = xl_state(false, {xlBoolean});\nsm_E1_template_RAM_we = sm_E1_template_RAM_we_reg;\n"
+	  "opCode_sm_E1_template_RAM = xl_concat(addrAck, ...\n                                     RNWReg, ...\n             "
+	  "                        bankAddr, ...\n                                     xl_slice(linearAddr, ...\n             "
+	  "                                 xl_nbits(linearAddr) - 1, ...\n                                              7) .."
+	  ".\n                                    );\nif opCode_sm_E1_template_RAM == xl_concat(xfix({xlUnsigned, 4, 0}, 8), ."
+	  "..\n                                         xfix({xlUnsigned, ...\n                                               "
+	  "xl_nbits(linearAddr) - 7, ...\n                                               0}, ...\n                            "
+	  "                   10) ...\n                                        );\n    sm_E1_template_RAM_we_reg = true;\nelse"
+	  "\n    sm_E1_template_RAM_we_reg = false;\nend\n\n\n% 'addr' ports of 'Shared Memory' blocks\npersistent sm_AtoD_Dat"
+	  "aMem_addr_reg; \nsm_AtoD_DataMem_addr_reg = xl_state(0, {xlUnsigned, 10, 0});\nsm_AtoD_DataMem_addr = sm_AtoD_DataM"
+	  "em_addr_reg;\nif addrAck == 1\n    sm_AtoD_DataMem_addr_reg = xl_slice(linearAddr, 10, 0);\nelse\n    sm_AtoD_DataM"
+	  "em_addr_reg = sm_AtoD_DataMem_addr_reg;\nend\npersistent sm_E1_filter_RAM_addr_reg; \nsm_E1_filter_RAM_addr_reg = x"
+	  "l_state(0, {xlUnsigned, 7, 0});\nsm_E1_filter_RAM_addr = sm_E1_filter_RAM_addr_reg;\nif addrAck == 1\n    sm_E1_fil"
+	  "ter_RAM_addr_reg = xl_slice(linearAddr, 7, 0);\nelse\n    sm_E1_filter_RAM_addr_reg = sm_E1_filter_RAM_addr_reg;\ne"
+	  "nd\npersistent sm_E1_Data_RAM_addr_reg; \nsm_E1_Data_RAM_addr_reg = xl_state(0, {xlUnsigned, 7, 0});\nsm_E1_Data_RA"
+	  "M_addr = sm_E1_Data_RAM_addr_reg;\nif addrAck == 1\n    sm_E1_Data_RAM_addr_reg = xl_slice(linearAddr, 7, 0);\nelse"
+	  "\n    sm_E1_Data_RAM_addr_reg = sm_E1_Data_RAM_addr_reg;\nend\npersistent sm_E1_template_RAM_addr_reg; \nsm_E1_temp"
+	  "late_RAM_addr_reg = xl_state(0, {xlUnsigned, 7, 0});\nsm_E1_template_RAM_addr = sm_E1_template_RAM_addr_reg;\nif ad"
+	  "drAck == 1\n    sm_E1_template_RAM_addr_reg = xl_slice(linearAddr, 7, 0);\nelse\n    sm_E1_template_RAM_addr_reg = "
+	  "sm_E1_template_RAM_addr_reg;\nend\n\n\n% 're' ports of 'From FIFO' blocks\n\n\n% 'en' ports of 'To Register' blocks"
+	  "\nif opCode == xl_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n                       xfix({xlUnsigned, xl_nbits(linea"
+	  "rAddr), 0}, 0))\n    sm_E1_template_size_en = true;\nelse\n    sm_E1_template_size_en = false;\nend\nif opCode == x"
+	  "l_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n                       xfix({xlUnsigned, xl_nbits(linearAddr), 0}, 1))\n"
+	  "    sm_ESP_Contol_Reg_en = true;\nelse\n    sm_ESP_Contol_Reg_en = false;\nend\nif opCode == xl_concat(xfix({xlUnsi"
+	  "gned, 4, 0}, 10), ...\n                       xfix({xlUnsigned, xl_nbits(linearAddr), 0}, 2))\n    sm_E1_samples_to"
+	  "_skip_en = true;\nelse\n    sm_E1_samples_to_skip_en = false;\nend\nif opCode == xl_concat(xfix({xlUnsigned, 4, 0},"
+	  " 10), ...\n                       xfix({xlUnsigned, xl_nbits(linearAddr), 0}, 3))\n    sm_E1_filter_length_en = tru"
+	  "e;\nelse\n    sm_E1_filter_length_en = false;\nend\nif opCode == xl_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n     "
+	  "                  xfix({xlUnsigned, xl_nbits(linearAddr), 0}, 4))\n    sm_dtoa1_data_regB_en = true;\nelse\n    sm_"
+	  "dtoa1_data_regB_en = false;\nend\nif opCode == xl_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n                       "
+	  "xfix({xlUnsigned, xl_nbits(linearAddr), 0}, 5))\n    sm_dtoa1_data_regA_en = true;\nelse\n    sm_dtoa1_data_regA_en"
+	  " = false;\nend\nif opCode == xl_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n                       xfix({xlUnsigned, "
+	  "xl_nbits(linearAddr), 0}, 6))\n    sm_dtoa0_data_regB_en = true;\nelse\n    sm_dtoa0_data_regB_en = false;\nend\nif"
+	  " opCode == xl_concat(xfix({xlUnsigned, 4, 0}, 10), ...\n                       xfix({xlUnsigned, xl_nbits(linearAdd"
+	  "r), 0}, 7))\n    sm_dtoa0_data_regA_en = true;\nelse\n    sm_dtoa0_data_regA_en = false;\nend\n\n\n% 'din' ports of"
+	  " 'To FIFO' blocks\n\n\n% 'we' ports of 'To FIFO' blocks\n\n\n% 'din' ports of 'To Register' blocks\nsm_E1_template_"
+	  "size_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                                 xlUnsigned, ...\n           "
+	  "                      0);\nsm_ESP_Contol_Reg_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                     "
+	  "            xlUnsigned, ...\n                                 0);\nsm_E1_samples_to_skip_din = xl_force(xl_slice(wr"
+	  "DBus, 8 - 1, 0), ...\n                                 xlUnsigned, ...\n                                 0);\nsm_E1"
+	  "_filter_length_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                                 xlUnsigned, ...\n "
+	  "                                0);\nsm_dtoa1_data_regB_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n          "
+	  "                       xlUnsigned, ...\n                                 0);\nsm_dtoa1_data_regA_din = xl_force(xl_"
+	  "slice(wrDBus, 16 - 1, 0), ...\n                                 xlUnsigned, ...\n                                 0"
+	  ");\nsm_dtoa0_data_regB_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n                                 xlUnsigned"
+	  ", ...\n                                 0);\nsm_dtoa0_data_regA_din = xl_force(xl_slice(wrDBus, 16 - 1, 0), ...\n  "
+	  "                               xlUnsigned, ...\n                                 0);\n\n\npersistent read_bank_out_"
+	  "reg; read_bank_out_reg = xl_state(0, {xlUnsigned, 32, 0});\nread_bank_out = read_bank_out_reg;\n\npersistent bankAd"
+	  "dr_reg; bankAddr_reg = xl_state(0, bankAddr);\n\nif bankAddr_reg == 0\n    % Bank 0: Shared Memories\n    read_bank"
+	  "_out_reg = ram_bank_out;\nelseif bankAddr_reg == 1\n    % Bank 1: From/To FIFOs\n    read_bank_out_reg =  0;\nelsei"
+	  "f bankAddr_reg == 2\n    % Bank 2: From/To Registers\n    read_bank_out_reg = reg_bank_out;\nelseif bankAddr_reg =="
+	  " 3\n    % Bank 3: Configuration Registers\n    read_bank_out_reg = 0;\nend\n\nbankAddr_reg = bankAddr;\n"
 	  suppress_output	  "on"
 	  defparams		  "{}"
 	  hide_port_list	  "{}"
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "mcode"
-	  sg_icon_stat		  "170,250,10,29,white,blue,0,8ce055a6,right,,[ ],[ ]"
+	  sg_icon_stat		  "170,250,11,29,white,blue,0,999558e0,right,,[ ],[ ]"
 	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 170 170 0 0 ],[0 0 250 250 0 ],[0.77 0.82 "
 	  "0.91 ]);\nplot([0 170 170 0 0 ],[0 0 250 250 0 ]);\npatch([31.6 66.28 90.28 114.28 138.28 90.28 55.6 31.6 ],[151.64"
 	  " 151.64 175.64 151.64 175.64 175.64 175.64 151.64 ],[1 1 1 ]);\npatch([55.6 90.28 66.28 31.6 55.6 ],[127.64 127.64 "
@@ -3687,26 +3817,27 @@ Model {
 	  ",[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor("
 	  "'black');port_label('input',1,'wrDBus');\ncolor('black');port_label('input',2,'bankAddr');\ncolor('black');port_lab"
 	  "el('input',3,'linearAddr');\ncolor('black');port_label('input',4,'RNWReg');\ncolor('black');port_label('input',5,'a"
-	  "ddrAck');\ncolor('black');port_label('input',6,'sm_ESP_Status_Reg');\ncolor('black');port_label('input',7,'sm_AtoD_"
-	  "DataMem');\ncolor('black');port_label('input',8,'sm_E1_filter_RAM');\ncolor('black');port_label('input',9,'sm_E1_Da"
-	  "ta_RAM');\ncolor('black');port_label('input',10,'sm_E1_template_RAM');\ncolor('black');port_label('output',1,'read_"
-	  "bank_out');\ncolor('black');port_label('output',2,'sm_E1_template_size_din');\ncolor('black');port_label('output',3"
-	  ",'sm_E1_template_size_en');\ncolor('black');port_label('output',4,'sm_ESP_Contol_Reg_din');\ncolor('black');port_la"
-	  "bel('output',5,'sm_ESP_Contol_Reg_en');\ncolor('black');port_label('output',6,'sm_E1_samples_to_skip_din');\ncolor("
-	  "'black');port_label('output',7,'sm_E1_samples_to_skip_en');\ncolor('black');port_label('output',8,'sm_E1_filter_len"
-	  "gth_din');\ncolor('black');port_label('output',9,'sm_E1_filter_length_en');\ncolor('black');port_label('output',10,"
-	  "'sm_dtoa1_data_regB_din');\ncolor('black');port_label('output',11,'sm_dtoa1_data_regB_en');\ncolor('black');port_la"
-	  "bel('output',12,'sm_dtoa1_data_regA_din');\ncolor('black');port_label('output',13,'sm_dtoa1_data_regA_en');\ncolor("
-	  "'black');port_label('output',14,'sm_dtoa0_data_regB_din');\ncolor('black');port_label('output',15,'sm_dtoa0_data_re"
-	  "gB_en');\ncolor('black');port_label('output',16,'sm_dtoa0_data_regA_din');\ncolor('black');port_label('output',17,'"
-	  "sm_dtoa0_data_regA_en');\ncolor('black');port_label('output',18,'sm_AtoD_DataMem_addr');\ncolor('black');port_label"
-	  "('output',19,'sm_AtoD_DataMem_din');\ncolor('black');port_label('output',20,'sm_AtoD_DataMem_we');\ncolor('black');"
-	  "port_label('output',21,'sm_E1_filter_RAM_addr');\ncolor('black');port_label('output',22,'sm_E1_filter_RAM_din');\nc"
-	  "olor('black');port_label('output',23,'sm_E1_filter_RAM_we');\ncolor('black');port_label('output',24,'sm_E1_Data_RAM"
-	  "_addr');\ncolor('black');port_label('output',25,'sm_E1_Data_RAM_din');\ncolor('black');port_label('output',26,'sm_E"
-	  "1_Data_RAM_we');\ncolor('black');port_label('output',27,'sm_E1_template_RAM_addr');\ncolor('black');port_label('out"
-	  "put',28,'sm_E1_template_RAM_din');\ncolor('black');port_label('output',29,'sm_E1_template_RAM_we');\ncolor('black')"
-	  ";disp('\\bf{xlmax}','texmode','on');\nfprintf('','COMMENT: end icon text');"
+	  "ddrAck');\ncolor('black');port_label('input',6,'sm_ESP_Status_Reg');\ncolor('black');port_label('input',7,'sm_E1_Te"
+	  "mplate_Acc_Reg');\ncolor('black');port_label('input',8,'sm_AtoD_DataMem');\ncolor('black');port_label('input',9,'sm"
+	  "_E1_filter_RAM');\ncolor('black');port_label('input',10,'sm_E1_Data_RAM');\ncolor('black');port_label('input',11,'s"
+	  "m_E1_template_RAM');\ncolor('black');port_label('output',1,'read_bank_out');\ncolor('black');port_label('output',2,"
+	  "'sm_E1_template_size_din');\ncolor('black');port_label('output',3,'sm_E1_template_size_en');\ncolor('black');port_l"
+	  "abel('output',4,'sm_ESP_Contol_Reg_din');\ncolor('black');port_label('output',5,'sm_ESP_Contol_Reg_en');\ncolor('bl"
+	  "ack');port_label('output',6,'sm_E1_samples_to_skip_din');\ncolor('black');port_label('output',7,'sm_E1_samples_to_s"
+	  "kip_en');\ncolor('black');port_label('output',8,'sm_E1_filter_length_din');\ncolor('black');port_label('output',9,'"
+	  "sm_E1_filter_length_en');\ncolor('black');port_label('output',10,'sm_dtoa1_data_regB_din');\ncolor('black');port_la"
+	  "bel('output',11,'sm_dtoa1_data_regB_en');\ncolor('black');port_label('output',12,'sm_dtoa1_data_regA_din');\ncolor("
+	  "'black');port_label('output',13,'sm_dtoa1_data_regA_en');\ncolor('black');port_label('output',14,'sm_dtoa0_data_reg"
+	  "B_din');\ncolor('black');port_label('output',15,'sm_dtoa0_data_regB_en');\ncolor('black');port_label('output',16,'s"
+	  "m_dtoa0_data_regA_din');\ncolor('black');port_label('output',17,'sm_dtoa0_data_regA_en');\ncolor('black');port_labe"
+	  "l('output',18,'sm_AtoD_DataMem_addr');\ncolor('black');port_label('output',19,'sm_AtoD_DataMem_din');\ncolor('black"
+	  "');port_label('output',20,'sm_AtoD_DataMem_we');\ncolor('black');port_label('output',21,'sm_E1_filter_RAM_addr');\n"
+	  "color('black');port_label('output',22,'sm_E1_filter_RAM_din');\ncolor('black');port_label('output',23,'sm_E1_filter"
+	  "_RAM_we');\ncolor('black');port_label('output',24,'sm_E1_Data_RAM_addr');\ncolor('black');port_label('output',25,'s"
+	  "m_E1_Data_RAM_din');\ncolor('black');port_label('output',26,'sm_E1_Data_RAM_we');\ncolor('black');port_label('outpu"
+	  "t',27,'sm_E1_template_RAM_addr');\ncolor('black');port_label('output',28,'sm_E1_template_RAM_din');\ncolor('black')"
+	  ";port_label('output',29,'sm_E1_template_RAM_we');\ncolor('black');disp('\\bf{xlmax}','texmode','on');\nfprintf('','"
+	  "COMMENT: end icon text');"
 	  Port {
 	    PortNumber		    1
 	    Name		    "rdData"
@@ -3885,10 +4016,10 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "sg_plb_addrpref"
-	  SID			  "164:453"
+	  SID			  "164:604"
 	  Ports			  [1, 1]
-	  Position		  [110, 780, 175, 800]
-	  ZOrder		  405
+	  Position		  [175, 1000, 245, 1020]
+	  ZOrder		  556
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway In"
 	  SourceType		  "Xilinx Gateway In Block"
@@ -3920,12 +4051,12 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "gatewayin"
-	  sg_icon_stat		  "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
-	  " ]);\nplot([0 65 65 0 0 ],[0 0 20 20 0 ]);\npatch([27.55 30.44 32.44 34.44 36.44 32.44 29.55 27.55 ],[12.22 12.22 1"
-	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([29.55 32.44 30.44 27.55 29.55 ],[10.22 10.22 12.22 12.22 10"
-	  ".22 ],[0.985 0.979 0.895 ]);\npatch([27.55 30.44 32.44 29.55 27.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
-	  "h([29.55 36.44 34.44 32.44 30.44 27.55 29.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
+	  sg_icon_stat		  "70,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 70 70 0 0 ],[0 0 20 20 0 ],[0.95 0.93 0.65"
+	  " ]);\nplot([0 70 70 0 0 ],[0 0 20 20 0 ]);\npatch([30.55 33.44 35.44 37.44 39.44 35.44 32.55 30.55 ],[12.22 12.22 1"
+	  "4.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([32.55 35.44 33.44 30.55 32.55 ],[10.22 10.22 12.22 12.22 10"
+	  ".22 ],[0.985 0.979 0.895 ]);\npatch([30.55 33.44 35.44 32.55 30.55 ],[8.22 8.22 10.22 10.22 8.22 ],[1 1 1 ]);\npatc"
+	  "h([32.55 39.44 37.44 35.44 33.44 30.55 32.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.979 0.895 ]);\nfprint"
 	  "f('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'"
 	  "\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfprintf('','COMMENT: end ic"
 	  "on text');"
@@ -3943,13 +4074,11 @@ Model {
 	  Points		  [0, 0]
 	  Branch {
 	    Labels		    [1, 0]
-	    Points		    [5, 0; 0, 360]
 	    DstBlock		    "plb_memmap"
 	    DstPort		    5
 	  }
 	  Branch {
 	    Labels		    [0, 0]
-	    Points		    [30, 0; 0, -420]
 	    DstBlock		    "Sl_addrAck"
 	    DstPort		    1
 	  }
@@ -3961,13 +4090,11 @@ Model {
 	  Points		  [0, 0]
 	  Branch {
 	    Labels		    [1, 0]
-	    Points		    [30, 0; 0, -265]
 	    DstBlock		    "Sl_wrDAck"
 	    DstPort		    1
 	  }
 	  Branch {
 	    Labels		    [0, 0]
-	    Points		    [30, 0; 0, -20]
 	    DstBlock		    "Sl_wrComp"
 	    DstPort		    1
 	  }
@@ -3977,7 +4104,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  29
-	  Points		  [5, 0; 0, 440]
 	  DstBlock		  "Shared Memory3"
 	  DstPort		  3
 	}
@@ -3986,7 +4112,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  28
-	  Points		  [5, 0; 0, 415]
 	  DstBlock		  "Shared Memory3"
 	  DstPort		  2
 	}
@@ -3995,7 +4120,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  27
-	  Points		  [5, 0; 0, 390]
 	  DstBlock		  "Shared Memory3"
 	  DstPort		  1
 	}
@@ -4004,7 +4128,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  26
-	  Points		  [5, 0; 0, 335]
 	  DstBlock		  "Shared Memory2"
 	  DstPort		  3
 	}
@@ -4013,7 +4136,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  25
-	  Points		  [5, 0; 0, 310]
 	  DstBlock		  "Shared Memory2"
 	  DstPort		  2
 	}
@@ -4022,7 +4144,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  24
-	  Points		  [5, 0; 0, 285]
 	  DstBlock		  "Shared Memory2"
 	  DstPort		  1
 	}
@@ -4031,7 +4152,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  23
-	  Points		  [5, 0; 0, 230]
 	  DstBlock		  "Shared Memory1"
 	  DstPort		  3
 	}
@@ -4040,7 +4160,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  22
-	  Points		  [5, 0; 0, 205]
 	  DstBlock		  "Shared Memory1"
 	  DstPort		  2
 	}
@@ -4049,7 +4168,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  21
-	  Points		  [5, 0; 0, 180]
 	  DstBlock		  "Shared Memory1"
 	  DstPort		  1
 	}
@@ -4058,7 +4176,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  20
-	  Points		  [5, 0; 0, 120]
 	  DstBlock		  "Shared Memory"
 	  DstPort		  3
 	}
@@ -4067,7 +4184,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  19
-	  Points		  [5, 0; 0, 95]
 	  DstBlock		  "Shared Memory"
 	  DstPort		  2
 	}
@@ -4076,7 +4192,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  18
-	  Points		  [10, 0]
 	  DstBlock		  "Shared Memory"
 	  DstPort		  1
 	}
@@ -4085,7 +4200,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  17
-	  Points		  [20, 0]
 	  DstBlock		  "To Register7"
 	  DstPort		  2
 	}
@@ -4094,7 +4208,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  16
-	  Points		  [20, 0]
 	  DstBlock		  "To Register7"
 	  DstPort		  1
 	}
@@ -4103,7 +4216,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  15
-	  Points		  [15, 0; 0, -60]
 	  DstBlock		  "To Register6"
 	  DstPort		  2
 	}
@@ -4112,7 +4224,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  14
-	  Points		  [15, 0; 0, -85]
 	  DstBlock		  "To Register6"
 	  DstPort		  1
 	}
@@ -4121,7 +4232,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  13
-	  Points		  [15, 0; 0, -135]
 	  DstBlock		  "To Register5"
 	  DstPort		  2
 	}
@@ -4130,7 +4240,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  12
-	  Points		  [15, 0; 0, -160]
 	  DstBlock		  "To Register5"
 	  DstPort		  1
 	}
@@ -4139,7 +4248,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  11
-	  Points		  [15, 0; 0, -210]
 	  DstBlock		  "To Register4"
 	  DstPort		  2
 	}
@@ -4148,7 +4256,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  10
-	  Points		  [15, 0; 0, -235]
 	  DstBlock		  "To Register4"
 	  DstPort		  1
 	}
@@ -4157,7 +4264,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  9
-	  Points		  [15, 0; 0, -290]
 	  DstBlock		  "To Register3"
 	  DstPort		  2
 	}
@@ -4166,7 +4272,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  8
-	  Points		  [15, 0; 0, -315]
 	  DstBlock		  "To Register3"
 	  DstPort		  1
 	}
@@ -4175,7 +4280,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  7
-	  Points		  [15, 0; 0, -365]
 	  DstBlock		  "To Register2"
 	  DstPort		  2
 	}
@@ -4184,7 +4288,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  6
-	  Points		  [15, 0; 0, -390]
 	  DstBlock		  "To Register2"
 	  DstPort		  1
 	}
@@ -4193,7 +4296,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  5
-	  Points		  [15, 0; 0, -440]
 	  DstBlock		  "To Register1"
 	  DstPort		  2
 	}
@@ -4202,7 +4304,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  4
-	  Points		  [15, 0; 0, -465]
 	  DstBlock		  "To Register1"
 	  DstPort		  1
 	}
@@ -4211,7 +4312,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  3
-	  Points		  [15, 0; 0, -520]
 	  DstBlock		  "To Register"
 	  DstPort		  2
 	}
@@ -4220,7 +4320,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  2
-	  Points		  [15, 0; 0, -545]
 	  DstBlock		  "To Register"
 	  DstPort		  1
 	}
@@ -4229,7 +4328,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_memmap"
 	  SrcPort		  1
-	  Points		  [0, -60; -195, 0; 0, 110; -200, 0; 0, -95]
 	  DstBlock		  "plb_decode"
 	  DstPort		  6
 	}
@@ -4238,34 +4336,38 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Shared Memory3"
 	  SrcPort		  1
-	  Points		  [0, -65; -300, 0]
 	  DstBlock		  "plb_memmap"
-	  DstPort		  10
+	  DstPort		  11
 	}
 	Line {
 	  Name			  "E1_Data_RAM_dout"
 	  Labels		  [0, 0]
 	  SrcBlock		  "Shared Memory2"
 	  SrcPort		  1
-	  Points		  [0, -65; -305, 0; 0, -205]
 	  DstBlock		  "plb_memmap"
-	  DstPort		  9
+	  DstPort		  10
 	}
 	Line {
 	  Name			  "E1_filter_RAM_dout"
 	  Labels		  [0, 0]
 	  SrcBlock		  "Shared Memory1"
 	  SrcPort		  1
-	  Points		  [0, -75; -305, 0; 0, -100]
 	  DstBlock		  "plb_memmap"
-	  DstPort		  8
+	  DstPort		  9
 	}
 	Line {
 	  Name			  "AtoD_DataMem_dout"
 	  Labels		  [0, 0]
 	  SrcBlock		  "Shared Memory"
 	  SrcPort		  1
-	  Points		  [0, 50; -305, 0; 0, -125]
+	  DstBlock		  "plb_memmap"
+	  DstPort		  8
+	}
+	Line {
+	  Name			  "E1_Template_Acc_Reg_dout"
+	  Labels		  [0, 0]
+	  SrcBlock		  "From Register1"
+	  SrcPort		  1
 	  DstBlock		  "plb_memmap"
 	  DstPort		  7
 	}
@@ -4274,7 +4376,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "From Register"
 	  SrcPort		  1
-	  Points		  [65, 0]
 	  DstBlock		  "plb_memmap"
 	  DstPort		  6
 	}
@@ -4283,7 +4384,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_decode"
 	  SrcPort		  6
-	  Points		  [5, 0; 0, 155]
 	  DstBlock		  "plb_memmap"
 	  DstPort		  4
 	}
@@ -4292,7 +4392,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_decode"
 	  SrcPort		  9
-	  Points		  [10, 0]
 	  DstBlock		  "plb_memmap"
 	  DstPort		  3
 	}
@@ -4301,7 +4400,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_decode"
 	  SrcPort		  5
-	  Points		  [5, 0; 0, 150]
 	  DstBlock		  "plb_memmap"
 	  DstPort		  2
 	}
@@ -4310,7 +4408,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_decode"
 	  SrcPort		  1
-	  Points		  [10, 0]
 	  DstBlock		  "plb_memmap"
 	  DstPort		  1
 	}
@@ -4383,7 +4480,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_decode"
 	  SrcPort		  8
-	  Points		  [5, 0; 0, 615]
 	  DstBlock		  "Sl_rdDBus"
 	  DstPort		  1
 	}
@@ -4392,7 +4488,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_decode"
 	  SrcPort		  7
-	  Points		  [5, 0; 0, 415]
 	  DstBlock		  "Sl_rdDAck"
 	  DstPort		  1
 	}
@@ -4401,7 +4496,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "plb_decode"
 	  SrcPort		  3
-	  Points		  [60, 0; 0, -365]
 	  DstBlock		  "Sl_rdComp"
 	  DstPort		  1
 	}
@@ -4410,7 +4504,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "sg_plb_addrpref"
 	  SrcPort		  1
-	  Points		  [10, 0]
 	  DstBlock		  "plb_decode"
 	  DstPort		  7
 	}
@@ -4419,7 +4512,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "PLB_wrDBus"
 	  SrcPort		  1
-	  Points		  [5, 0; 0, 5]
 	  DstBlock		  "plb_decode"
 	  DstPort		  5
 	}
@@ -4452,7 +4544,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "SPLB_Rst"
 	  SrcPort		  1
-	  Points		  [5, 0; 0, -5]
 	  DstBlock		  "plb_decode"
 	  DstPort		  1
 	}
@@ -4503,14 +4594,12 @@ Model {
 	Line {
 	  SrcBlock		  "Sl_wrComp"
 	  SrcPort		  1
-	  Points		  [70, 0; 0, -360]
 	  DstBlock		  "Terminator6"
 	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "Sl_wrDAck"
 	  SrcPort		  1
-	  Points		  [70, 0; 0, -165]
 	  DstBlock		  "Terminator5"
 	  DstPort		  1
 	}
@@ -4523,67 +4612,28 @@ Model {
 	Line {
 	  SrcBlock		  "Sl_rdDBus"
 	  SrcPort		  1
-	  Points		  [60, 0; 0, 100]
 	  DstBlock		  "Terminator3"
 	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "Sl_rdDAck"
 	  SrcPort		  1
-	  Points		  [60, 0; 0, 295]
 	  DstBlock		  "Terminator2"
 	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "Sl_rdComp"
 	  SrcPort		  1
-	  Points		  [45, 0; 0, -70]
 	  DstBlock		  "Terminator1"
 	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "Sl_addrAck"
 	  SrcPort		  1
-	  Points		  [45, 0; 0, -20]
 	  DstBlock		  "Terminator"
 	  DstPort		  1
 	}
       }
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Eng_1_Template_Acc"
-      SID		      "129"
-      Ports		      [1, 1]
-      Position		      [3970, 1390, 4030, 1410]
-      ZOrder		      147
-      LibraryVersion	      "1.2"
-      SourceBlock	      "xbsIndex_r4/Gateway Out"
-      SourceType	      "Xilinx Gateway Out Block"
-      infoedit		      "Gateway out block.  Converts Xilinx fixed-point or floating-point type inputs into ouputs of ty"
-      "pe Simulink integer, single, double, or fixed-point.<br><br>Hardware notes:  In hardware these blocks become top"
-      " level output ports or are discarded, depending on how they are configured."
-      inherit_from_input      off
-      hdl_port		      on
-      timing_constraint	      "None"
-      locs_specified	      off
-      LOCs		      "{}"
-      UseAsDAC		      off
-      DACChannel	      "'1'"
-      xl_use_area	      off
-      xl_area		      "[0,0,0,0,0,0,0]"
-      has_advanced_control    "0"
-      sggui_pos		      "-1,-1,-1,-1"
-      block_type	      "gatewayout"
-      sg_icon_stat	      "60,20,1,1,white,yellow,1,cc31b7ac,right,,[ ],[ ]"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 20 20 0 ],[0.95 0."
-      "93 0.65 ]);\nplot([0 60 60 0 0 ],[0 0 20 20 0 ]);\npatch([25.55 28.44 30.44 32.44 34.44 30.44 27.55 25.55 ],[12."
-      "22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([27.55 30.44 28.44 25.55 27.55 ],[10.22 10.22 1"
-      "2.22 12.22 10.22 ],[0.985 0.979 0.895 ]);\npatch([25.55 28.44 30.44 27.55 25.55 ],[8.22 8.22 10.22 10.22 8.22 ],"
-      "[1 1 1 ]);\npatch([27.55 34.44 32.44 30.44 28.44 25.55 27.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.97"
-      "9 0.895 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
-      "port_label('input',1,' ');\ncolor('black');port_label('output',1,'\\fontsize{11pt}\\bf Out ','texmode','on');\nf"
-      "printf('','COMMENT: end icon text');"
     }
     Block {
       BlockType		      Reference
@@ -4624,8 +4674,8 @@ Model {
       BlockType		      SubSystem
       Name		      "Engine_1\n"
       SID		      "160"
-      Ports		      [2, 1]
-      Position		      [3785, 1359, 3915, 1441]
+      Ports		      [2, 2]
+      Position		      [3780, 1349, 3945, 1436]
       ZOrder		      155
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -4636,8 +4686,8 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"Engine_1\n"
-	Location		[1630, 0, 3141, 898]
-	Open			off
+	Location		[89, 0, 1600, 863]
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -4648,7 +4698,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
+	ZoomFactor		"100"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Engine_1_Reset\n"
@@ -4672,7 +4722,7 @@ Model {
 	  Name			  "Accumulator"
 	  SID			  "109"
 	  Ports			  [2, 1]
-	  Position		  [1935, 641, 1995, 699]
+	  Position		  [1930, 676, 1990, 734]
 	  ZOrder		  109
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Accumulator"
@@ -4873,14 +4923,14 @@ Model {
 	  Name			  "Convert1"
 	  SID			  "216"
 	  Ports			  [1, 1]
-	  Position		  [2090, 655, 2135, 685]
+	  Position		  [2065, 690, 2110, 720]
 	  ZOrder		  157
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
 	  infoedit		  "Hardware notes: rounding and saturating require hardware resources; truncating and wrapping do not."
 	  gui_display_data_type	  "Fixed-point"
-	  arith_type		  "Signed  (2's comp)"
+	  arith_type		  "Unsigned"
 	  n_bits		  "16"
 	  bin_pt		  "8"
 	  float_type		  "Single"
@@ -4960,7 +5010,7 @@ Model {
 	  Name			  "Difference"
 	  SID			  "115"
 	  Ports			  [2, 1]
-	  Position		  [1690, 636, 1750, 694]
+	  Position		  [1690, 676, 1750, 734]
 	  ZOrder		  111
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/AddSub"
@@ -5681,7 +5731,7 @@ Model {
 	  Name			  "Square"
 	  SID			  "136"
 	  Ports			  [2, 1]
-	  Position		  [1815, 625, 1870, 680]
+	  Position		  [1815, 675, 1870, 730]
 	  ZOrder		  106
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Mult"
@@ -5974,14 +6024,14 @@ Model {
 	  BlockType		  Reference
 	  Name			  "acc_latch\n"
 	  SID			  "146"
-	  Ports			  [3, 1]
-	  Position		  [2200, 649, 2250, 761]
+	  Ports			  [2, 1]
+	  Position		  [2200, 651, 2250, 764]
 	  ZOrder		  146
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Register"
 	  SourceType		  "Xilinx Register Block"
 	  init			  "0"
-	  rst			  on
+	  rst			  off
 	  en			  on
 	  dbl_ovrd		  off
 	  xl_use_area		  off
@@ -5989,16 +6039,15 @@ Model {
 	  has_advanced_control	  "0"
 	  sggui_pos		  "-1,-1,-1,-1"
 	  block_type		  "register"
-	  sg_icon_stat		  "50,112,3,1,white,blue,0,30546de1,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 112 112 0 ],[0.77 0.82 0."
-	  "91 ]);\nplot([0 50 50 0 0 ],[0 0 112 112 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],[63.77 63"
+	  sg_icon_stat		  "50,113,2,1,white,blue,0,6bd0930c,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 113 113 0 ],[0.77 0.82 0."
+	  "91 ]);\nplot([0 50 50 0 0 ],[0 0 113 113 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],[63.77 63"
 	  ".77 70.77 63.77 70.77 70.77 70.77 63.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[56.77 56.77 63.77 6"
 	  "3.77 56.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[49.77 49.77 56.77 56.77 49.77 ],[1 1 "
 	  "1 ]);\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[42.77 42.77 49.77 42.77 49.77 49.77 42.77 ],[0.931 0.9"
 	  "46 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');po"
-	  "rt_label('input',1,'d');\ncolor('black');port_label('input',2,'rst');\ncolor('black');port_label('input',3,'en');\n"
-	  "color('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end"
-	  " icon text');"
+	  "rt_label('input',1,'d');\ncolor('black');port_label('input',2,'en');\ncolor('black');port_label('output',1,'q');\nc"
+	  "olor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
@@ -6189,6 +6238,35 @@ Model {
 	  "1 30.88 26.88 22.88 18.88 13.1 17.1 ],[7.44 7.44 11.44 7.44 11.44 11.44 7.44 ],[0.931 0.946 0.973 ]);\nfprintf('','"
 	  "COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\ncolor('black');port_label('output',1,'cas"
 	  "t');\nfprintf('','COMMENT: end icon text');"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "filter_out"
+	  SID			  "220"
+	  Ports			  [2, 1]
+	  Position		  [2200, 266, 2250, 379]
+	  ZOrder		  158
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/Register"
+	  SourceType		  "Xilinx Register Block"
+	  init			  "0"
+	  rst			  off
+	  en			  on
+	  dbl_ovrd		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "register"
+	  sg_icon_stat		  "50,113,2,1,white,blue,0,6bd0930c,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 113 113 0 ],[0.77 0.82 0."
+	  "91 ]);\nplot([0 50 50 0 0 ],[0 0 113 113 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],[63.77 63"
+	  ".77 70.77 63.77 70.77 70.77 70.77 63.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[56.77 56.77 63.77 6"
+	  "3.77 56.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[49.77 49.77 56.77 56.77 49.77 ],[1 1 "
+	  "1 ]);\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[42.77 42.77 49.77 42.77 49.77 49.77 42.77 ],[0.931 0.9"
+	  "46 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');po"
+	  "rt_label('input',1,'d');\ncolor('black');port_label('input',2,'en');\ncolor('black');port_label('output',1,'q');\nc"
+	  "olor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
@@ -6458,10 +6536,19 @@ Model {
 	}
 	Block {
 	  BlockType		  Outport
-	  Name			  "Out1"
+	  Name			  "LSD_Out\n"
 	  SID			  "162"
-	  Position		  [2335, 698, 2365, 712]
+	  Position		  [2335, 703, 2365, 717]
 	  ZOrder		  155
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Filter_Out"
+	  SID			  "221"
+	  Position		  [2325, 318, 2355, 332]
+	  ZOrder		  159
+	  Port			  "2"
 	  IconDisplay		  "Port number"
 	}
 	Line {
@@ -6524,6 +6611,7 @@ Model {
 	Line {
 	  SrcBlock		  "Square"
 	  SrcPort		  1
+	  Points		  [11, 0; 0, -15]
 	  DstBlock		  "Accumulator"
 	  DstPort		  1
 	}
@@ -6586,7 +6674,7 @@ Model {
 	Line {
 	  SrcBlock		  "Filtered Data RAM"
 	  SrcPort		  2
-	  Points		  [22, 0; 0, 97; -374, 0; 0, 43]
+	  Points		  [22, 0; 0, 125; -374, 0; 0, 55]
 	  DstBlock		  "Difference"
 	  DstPort		  1
 	}
@@ -6612,7 +6700,7 @@ Model {
 	Line {
 	  SrcBlock		  "acc_latch\n"
 	  SrcPort		  1
-	  DstBlock		  "Out1"
+	  DstBlock		  "LSD_Out\n"
 	  DstPort		  1
 	}
 	Line {
@@ -6652,22 +6740,14 @@ Model {
 	Line {
 	  SrcBlock		  "rst_template_acc"
 	  SrcPort		  1
-	  Points		  [766, 0; 0, 91; 166, 0; 0, 84]
+	  Points		  [766, 0; 0, 91; 166, 0; 0, 119]
 	  DstBlock		  "Accumulator"
-	  DstPort		  2
-	}
-	Line {
-	  SrcBlock		  "latch_temp_accum"
-	  SrcPort		  1
-	  Points		  [1077, 0; 0, -455]
-	  DstBlock		  "acc_latch\n"
 	  DstPort		  2
 	}
 	Line {
 	  Name			  "Template Data out"
 	  SrcBlock		  "Shared Memory"
 	  SrcPort		  1
-	  Points		  [53, 0; 0, -40]
 	  DstBlock		  "Difference"
 	  DstPort		  2
 	}
@@ -6757,11 +6837,12 @@ Model {
 	  SrcPort		  1
 	  Points		  [34, 0]
 	  Branch {
+	    Points		    [0, 10]
 	    DstBlock		    "Square"
 	    DstPort		    2
 	  }
 	  Branch {
-	    Points		    [0, -25]
+	    Points		    [0, -15]
 	    DstBlock		    "Square"
 	    DstPort		    1
 	  }
@@ -6790,9 +6871,17 @@ Model {
 	Line {
 	  SrcBlock		  "filt_data_RAM_wr"
 	  SrcPort		  1
-	  Points		  [693, 0; 0, -492; 217, 0]
-	  DstBlock		  "Filtered Data RAM"
-	  DstPort		  3
+	  Points		  [702, 0; 0, -182]
+	  Branch {
+	    Points		    [442, 0; 0, -303]
+	    DstBlock		    "filter_out"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -310; 208, 0]
+	    DstBlock		    "Filtered Data RAM"
+	    DstPort		    3
+	  }
 	}
 	Line {
 	  SrcBlock		  "ld_filter_cntr\n"
@@ -6833,9 +6922,17 @@ Model {
 	Line {
 	  SrcBlock		  "Filter Accumulator\n"
 	  SrcPort		  1
-	  Points		  [41, 0; 0, -35]
-	  DstBlock		  "Filtered Data RAM"
-	  DstPort		  2
+	  Points		  [24, 0]
+	  Branch {
+	    Points		    [0, -117; 371, 0]
+	    DstBlock		    "filter_out"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [17, 0; 0, -35]
+	    DstBlock		    "Filtered Data RAM"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  SrcBlock		  "en_filter_cntr"
@@ -6913,7 +7010,21 @@ Model {
 	Line {
 	  SrcBlock		  "Convert1"
 	  SrcPort		  1
+	  Points		  [40, 0; 0, -25]
 	  DstBlock		  "acc_latch\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "latch_temp_accum"
+	  SrcPort		  1
+	  Points		  [118, 0; 0, -361; 1097, 0]
+	  DstBlock		  "acc_latch\n"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "filter_out"
+	  SrcPort		  1
+	  DstBlock		  "Filter_Out"
 	  DstPort		  1
 	}
       }
@@ -6953,52 +7064,6 @@ Model {
       " ]);\npatch([20.2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 "
       "0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');po"
       "rt_label('output',1,'dout');\nfprintf('','COMMENT: end icon text');"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Gateway In1"
-      SID		      "215"
-      Ports		      [1, 1]
-      Position		      [3060, 1045, 3125, 1065]
-      ZOrder		      203
-      LibraryVersion	      "1.2"
-      SourceBlock	      "xbsIndex_r4/Gateway In"
-      SourceType	      "Xilinx Gateway In Block"
-      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, single, double and fixed-point to "
-      " Xilinx fixed-point or floating-point data type.<br><br>Hardware notes:  In hardware these blocks become top lev"
-      "el input ports."
-      gui_display_data_type   "Fixed-point"
-      arith_type	      "Unsigned"
-      n_bits		      "16"
-      bin_pt		      "0"
-      preci_type	      "Single"
-      exp_width		      "8"
-      frac_width	      "24"
-      quantization	      "Round  (unbiased: +/- Inf)"
-      overflow		      "Saturate"
-      period		      "1"
-      dbl_ovrd		      off
-      timing_constraint	      "None"
-      locs_specified	      off
-      LOCs		      "{}"
-      UseAsADC		      off
-      ADCChannel	      "'1'"
-      xl_use_area	      off
-      xl_area		      "[0,0,0,0,0,0,0]"
-      inherit_from_input      off
-      hdl_port		      "on"
-      has_advanced_control    "0"
-      sggui_pos		      "-1,-1,-1,-1"
-      block_type	      "gatewayin"
-      sg_icon_stat	      "65,20,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 20 20 0 ],[0.95 0."
-      "93 0.65 ]);\nplot([0 65 65 0 0 ],[0 0 20 20 0 ]);\npatch([27.55 30.44 32.44 34.44 36.44 32.44 29.55 27.55 ],[12."
-      "22 12.22 14.22 12.22 14.22 14.22 14.22 12.22 ],[1 1 1 ]);\npatch([29.55 32.44 30.44 27.55 29.55 ],[10.22 10.22 1"
-      "2.22 12.22 10.22 ],[0.985 0.979 0.895 ]);\npatch([27.55 30.44 32.44 29.55 27.55 ],[8.22 8.22 10.22 10.22 8.22 ],"
-      "[1 1 1 ]);\npatch([29.55 36.44 34.44 32.44 30.44 27.55 29.55 ],[6.22 6.22 8.22 6.22 8.22 8.22 6.22 ],[0.985 0.97"
-      "9 0.895 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
-      "port_label('input',1,'\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfp"
-      "rintf('','COMMENT: end icon text');"
     }
     Block {
       BlockType		      Reference
@@ -7162,13 +7227,6 @@ Model {
     }
     Block {
       BlockType		      Terminator
-      Name		      "Terminator"
-      SID		      "139"
-      Position		      [4075, 1390, 4095, 1410]
-      ZOrder		      148
-    }
-    Block {
-      BlockType		      Terminator
       Name		      "Terminator1"
       SID		      "186"
       Position		      [2935, 1550, 2955, 1570]
@@ -7187,6 +7245,20 @@ Model {
       SID		      "212"
       Position		      [3550, 1425, 3570, 1445]
       ZOrder		      200
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator12"
+      SID		      "218"
+      Position		      [4195, 1385, 4215, 1405]
+      ZOrder		      206
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator13"
+      SID		      "223"
+      Position		      [4195, 1520, 4215, 1540]
+      ZOrder		      209
     }
     Block {
       BlockType		      Terminator
@@ -7260,6 +7332,80 @@ Model {
       init		      "0"
       ownership		      "Locally owned and initialized"
       explicit_data_type      on
+      gui_display_data_type   "Fixed-point"
+      arith_type	      "Unsigned"
+      n_bits		      "16"
+      bin_pt		      "0"
+      preci_type	      "Single"
+      dbl_ovrd		      off
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      has_advanced_control    "0"
+      sggui_pos		      "-1,-1,-1,-1"
+      block_type	      "toreg"
+      sg_icon_stat	      "60,55,2,1,white,blue,0,10ab453e,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 55 55 0 ],[0.77 0."
+      "82 0.91 ]);\nplot([0 60 60 0 0 ],[0 0 55 55 0 ]);\npatch([14.425 24.54 31.54 38.54 45.54 31.54 21.425 14.425 ],["
+      "34.77 34.77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([21.425 31.54 24.54 14.425 21.425 ],[27.77 2"
+      "7.77 34.77 34.77 27.77 ],[0.931 0.946 0.973 ]);\npatch([14.425 24.54 31.54 21.425 14.425 ],[20.77 20.77 27.77 27"
+      ".77 20.77 ],[1 1 1 ]);\npatch([21.425 45.54 38.54 31.54 24.54 14.425 21.425 ],[13.77 13.77 20.77 13.77 20.77 20."
+      "77 13.77 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon te"
+      "xt');\ncolor('black');port_label('input',1,'din');\ncolor('black');port_label('input',2,'en');\ncolor('black');p"
+      "ort_label('output',1,'dout');\nfprintf('','COMMENT: end icon text');"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "To Register1"
+      SID		      "219"
+      Ports		      [2, 1]
+      Position		      [4035, 1365, 4095, 1420]
+      ZOrder		      204
+      AttributesFormatString  "<< %<shared_memory_name> >>"
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/To Register"
+      SourceType	      "Xilinx Shared Memory Based To Register Block"
+      infoedit		      "Register block that writes data to a shared memory register.  Delay of one sample period."
+      shared_memory_name      "'E1_Template_Acc_Reg'"
+      init		      "0"
+      ownership		      "Locally owned and initialized"
+      explicit_data_type      off
+      gui_display_data_type   "Fixed-point"
+      arith_type	      "Unsigned"
+      n_bits		      "16"
+      bin_pt		      "0"
+      preci_type	      "Single"
+      dbl_ovrd		      off
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      has_advanced_control    "0"
+      sggui_pos		      "-1,-1,-1,-1"
+      block_type	      "toreg"
+      sg_icon_stat	      "60,55,2,1,white,blue,0,10ab453e,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 55 55 0 ],[0.77 0."
+      "82 0.91 ]);\nplot([0 60 60 0 0 ],[0 0 55 55 0 ]);\npatch([14.425 24.54 31.54 38.54 45.54 31.54 21.425 14.425 ],["
+      "34.77 34.77 41.77 34.77 41.77 41.77 41.77 34.77 ],[1 1 1 ]);\npatch([21.425 31.54 24.54 14.425 21.425 ],[27.77 2"
+      "7.77 34.77 34.77 27.77 ],[0.931 0.946 0.973 ]);\npatch([14.425 24.54 31.54 21.425 14.425 ],[20.77 20.77 27.77 27"
+      ".77 20.77 ],[1 1 1 ]);\npatch([21.425 45.54 38.54 31.54 24.54 14.425 21.425 ],[13.77 13.77 20.77 13.77 20.77 20."
+      "77 13.77 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon te"
+      "xt');\ncolor('black');port_label('input',1,'din');\ncolor('black');port_label('input',2,'en');\ncolor('black');p"
+      "ort_label('output',1,'dout');\nfprintf('','COMMENT: end icon text');"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "To Register2"
+      SID		      "224"
+      Ports		      [2, 1]
+      Position		      [4035, 1500, 4095, 1555]
+      ZOrder		      207
+      AttributesFormatString  "<< %<shared_memory_name> >>"
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/To Register"
+      SourceType	      "Xilinx Shared Memory Based To Register Block"
+      infoedit		      "Register block that writes data to a shared memory register.  Delay of one sample period."
+      shared_memory_name      "'E1_Filter_Out_Reg'"
+      init		      "0"
+      ownership		      "Locally owned and initialized"
+      explicit_data_type      off
       gui_display_data_type   "Fixed-point"
       arith_type	      "Unsigned"
       n_bits		      "16"
@@ -7492,12 +7638,6 @@ Model {
       "printf('','COMMENT: end icon text');"
     }
     Line {
-      SrcBlock		      "Eng_1_Template_Acc"
-      SrcPort		      1
-      DstBlock		      "Terminator"
-      DstPort		      1
-    }
-    Line {
       SrcBlock		      "Bit 4\n"
       SrcPort		      1
       Points		      [24, 0]
@@ -7512,19 +7652,13 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Engine_1\n"
-      SrcPort		      1
-      DstBlock		      "Eng_1_Template_Acc"
-      DstPort		      1
-    }
-    Line {
       SrcBlock		      "AtoD_DataMem_Addr\n"
       SrcPort		      1
       DstBlock		      "Shared Memory"
       DstPort		      1
     }
     Line {
-      SrcBlock		      "Gateway In1"
+      SrcBlock		      "AtoD_DataMem_Data\n"
       SrcPort		      1
       DstBlock		      "Shared Memory"
       DstPort		      2
@@ -7669,7 +7803,7 @@ Model {
       SrcPort		      1
       Points		      [25, 0]
       Branch {
-	Points			[0, 43; 380, 0]
+	Points			[0, 43; 375, 0]
 	DstBlock		"Engine_1\n"
 	DstPort			2
       }
@@ -7831,7 +7965,48 @@ Model {
     Line {
       SrcBlock		      "Convert"
       SrcPort		      1
+      Points		      [17, 0; 0, -10]
       DstBlock		      "Engine_1\n"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Engine_1\n"
+      SrcPort		      1
+      Points		      [40, 0; 0, 10]
+      DstBlock		      "To Register1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "To Register1"
+      SrcPort		      1
+      DstBlock		      "Terminator12"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      Points		      [91, 0]
+      Branch {
+	Points			[0, -135]
+	DstBlock		"To Register1"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"To Register2"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "To Register2"
+      SrcPort		      1
+      DstBlock		      "Terminator13"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Engine_1\n"
+      SrcPort		      2
+      Points		      [60, 0; 0, 100]
+      DstBlock		      "To Register2"
       DstPort		      1
     }
   }
@@ -7987,10 +8162,10 @@ MatData {
     "   &     0         0    !@   &5X<&]R=   #@   &     &    \"     0         !0    @    !    ,     $         $    #   "
     " !#.EQ5<V5R<UQP9'=<25-%7U!R;VIE8W1S7$534#)?,%Q-:6Y3>7-%;6)E9%!R;V,.    .     8    (    !@         %    \"     $   "
     " !     0         )    \"            / _#@   #@    &    \"     8         !0    @    !     0    $         \"0    @  "
-    "             X    P    !@    @    $          4    (     0    $    !         !   0!A    #@   #@    &    \"     8   "
+    "             X    P    !@    @    $          4    (     0    $    !         !   0!B    #@   #@    &    \"     8   "
     "      !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    &          4    (     0    $    "
     "!          D    (               .    .     8    (    !@         %    \"     $    !     0         )    \"          "
-    " 0%A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    "
+    " @%A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    "
     "&          4    (     0    $    !          D    (               .    ,     8    (    !@         %    \"           "
     "     0         )          X   #P,0  !@    @    \"          4    (     0    $    !          4 !  ,     0   !@   !S:"
     "&%R960       !C;VUP:6QA=&EO;@ .    < 0   8    (     @         %    \"     $    !     0         %  0 $P    $   \"8 "
@@ -8138,10 +8313,10 @@ MatData {
     "  \"     $    &     0         0    !@   &5X<&]R=   #@   &     &    \"     0         !0    @    !    ,     $       "
     "  $    #    !#.EQ5<V5R<UQP9'=<25-%7U!R;VIE8W1S7$534#)?,%Q-:6Y3>7-%;6)E9%!R;V,.    .     8    (    !@         %    "
     "\"     $    !     0         )    \"            / _#@   #@    &    \"     8         !0    @    !     0    $        "
-    " \"0    @               X    P    !@    @    $          4    (     0    $    !         !   0!A    #@   #@    &    "
+    " \"0    @               X    P    !@    @    $          4    (     0    $    !         !   0!B    #@   #@    &    "
     "\"     8         !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    &          4    (    "
     " 0    $    !          D    (               .    .     8    (    !@         %    \"     $    !     0         )    \""
-    "           0%A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX    X    !"
+    "           @%A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX    X    !"
     "@    @    &          4    (     0    $    !          D    (               .    ,     8    (    !@         %    \" "
     "               0         )          "
   }
@@ -8280,7 +8455,7 @@ MatData {
   }
   DataRecord {
     Tag			    DataTag2
-    Data		    "  %)30     .    J!    8    (     @         %    \"     $    !     0         %  0 &0    $   #5 @  <VEG;F"
+    Data		    "  %)30     .    >!<   8    (     @         %    \"     $    !     0         %  0 &0    $   #5 @  <VEG;F"
     "%L                         &QA<W1?<V5L96-T961?<VEG;F%L      !H:6=H;&EG:'1E9%]S:6=N86QS        :&EG:&QI9VAT7W)E8W1?"
     ":&%N9&QE<P   '-A=F5D7W!O<VET:6]N              !S879E9%]S8W)E96YS:7IE            =&EM95]L:6UI=',                  '"
     ")E<75E<W1E9%]T:6UE7VQI;6ET<P    !E;F1T:6UE                        <W1A<G1T:6UE                     '9E<G1?;&]C    "
@@ -8289,47 +8464,68 @@ MatData {
     "9$]F4VEM                3F5X=$-O;&]R26YD97@              &]P97)A=&EO;@                    !O<&5R871I;VY?<W1A=&4   "
     "          =&EM95]D:7-P;&%Y7W5N:70          'AS;&ED97)?=F%L                  !S8V]P96AA;F1L90                  ;6EN"
     "7W!E<FEO9                    '-I;75L871I;VY?=&EM90            !Y;6%X                            >6UI;@            "
-    "               '!R979I;W5S7V]P97)A=&EO;E]S=&%T90     .    0 8   8    (     @         %    \"     $    \"     0    "
-    "     %  0 #0    $   \"<    :&%N9&QE         '!A<F5N=         !D:7-P;&%Y;F%M90  <&]R=&YU;0       ')A9&EX          !"
-    "C;VQO<@          ='=O<P           &9O<FUA=         !H96EG:'0         ;V9F<V5T         '-C86QE7V9A8W1O<@!.;T1A=&$  "
-    "             X    X    !@    @    &          4    (     0    $    !          D    (        T (:J$ .    4     8    "
-    "(    !          %    \"     $    =     0         0    '0   %)417!H>7-%;F<O16YG7S%?5&5M<&QA=&5?06-C    #@   $     &"
-    "    \"     0         !0    @    !    $     $         $    !    !'871E=V%Y($]U=\"]/=70Q#@   #@    &    \"     8    "
-    "     !0    @    !     0    $         \"0    @           #P/PX    X    !@    @    $          4    (     0    <    !"
-    "         !     '    9&5C:6UA;  .    2     8    (    !@         %    \"     $    #     0         )    &            "
-    "                     #P/PX   !     !@    @    $          4    (     0    \\    !         !     /    ='=O<RUC;VUP;&"
-    "5M96YT  X    X    !@    @    $          4    (     0    8    !         !     &    86YA;&]G   .    .     8    (    "
-    "!@         %    \"     $    !     0         )    \"            !! #@   #@    &    \"     8         !0    @    !   "
-    "  0    $         \"0    @            $P X    X    !@    @    &          4    (     0    $    !          D    (    "
-    "        \\#\\.    .     8    (    !@         %    \"     $    !     0         )    \"               #@   #@    &  "
-    "  \"     8         !0    @    !     0    $         \"0    @               X         #@         .          X    X  "
-    "  !@    @    $          4    (     0    <    !         !     '    9&5C:6UA;  .    2     8    (    !@         %    "
-    "\"     $    #     0         )    &            / _        \\#\\           X   !     !@    @    $          4    (   "
-    "  0    \\    !         !     /    ='=O<RUC;VUP;&5M96YT  X    P    !@    @    $          4    (     0    0    !    "
-    "     !  ! !T:6UE#@   #@    &    \"     8         !0    @    !     0    $         \"0    @            00 X    X    "
-    "!@    @    &          4    (     0    $    !          D    (            &, .    .     8    (    !@         %    \""
-    "     $    !     0         )    \"            / _#@         .    .     8    (    !@         %    \"     $    !     "
-    "0         )    \"            / _#@   #@    &    \"     8         !0    @    !     0    $         \"0    @         "
-    "  #P/PX    X    !@    @    &          4    (     0    $    !          D    (        \\ +HJD .    4     8    (    !"
-    "@         %    \"     $    $     0         )    (            'E         54       +B.0       P'M #@   $     &    \""
-    "     8         !0    @    !     @    $         \"0   !            \"90       ((Q #@   $     &    \"     8         "
-    "!0    @    !     @    $         \"0   !                    !0:@A!#@   $     &    \"     8         !0    @    !    "
-    " @    $         \"0   !                       /!_#@   #@    &    \"     8         !0    @    !     0    $         "
-    "\"0    @         4&H(00X    X    !@    @    &          4    (     0    $    !          D    (               .    4"
-    "     8    (    !@         %    \"     (    \"     0         )    (            .\"_        $L         4P        !C "
-    "#@   #@    &    \"     8         !0    @    !     0    $         \"0    @   #-S,S,S,P40 X    X    !@    @    &    "
-    "      4    (     0    $    !          D    (               .    .     8    (    !@         %    \"     $    !     "
-    "0         )    \"    #J,,.*.>44^#@   #     &    \"     8         !0    @               $         \"0         .    "
-    ",     8    (    !          %    \"     $    #     0         0  , ;V9F  X    P    !@    @    $          4    (     "
-    "0    (    !         !   @!O;@  #@   #     &    \"     0         !0    @    !     @    $         $  \" &]N   .    ."
-    "     8    (    !@         %    \"     $    !     0         )    \"             ! #@   #     &    \"     0         "
-    "!0    @    !    !     $         $  $ $Y/3D4.    ,     8    (    !          %    \"     $    $     0         0  0 1"
-    "$].10X   !X    !@    @    !          4    (     0    $    !          X   !(    !@    @    $          4    (     0 "
-    "  !,    !         !     3    5&EM92!I;B!N86YO<V5C;VYD<P      #@   #@    &    \"     8         !0    @    !     0  "
-    "  $         \"0    @               X    X    !@    @    &          4    (     0    $    !          D    (         "
-    "   \\#\\.    .     8    (    !@         %    \"     $    !     0         )    \"    #J,,.*.>44^#@   #@    &    \" "
-    "    8         !0    @    !     0    $         \"0    @    M0QSKXC8J/PX    X    !@    @    &          4    (     0 "
-    "   $    !          D    (               .    .     8    (    !@         %    \"     $    !     0         )    \"  "
-    "          !K #@   #     &    \"     0         !0    @    !    !     $         $  $ $Y/3D4"
+    "               '!R979I;W5S7V]P97)A=&EO;E]S=&%T90     .    V P   8    (     @         %    \"     $    $     0     "
+    "    %  0 #0    $   \"<    :&%N9&QE         '!A<F5N=         !D:7-P;&%Y;F%M90  <&]R=&YU;0       ')A9&EX          !C"
+    ";VQO<@          ='=O<P           &9O<FUA=         !H96EG:'0         ;V9F<V5T         '-C86QE7V9A8W1O<@!.;T1A=&$   "
+    "            X    X    !@    @    &          4    (     0    $    !          D    (        (  \"M$ .    4     8    "
+    "(    !          %    \"     $    ?     0         0    'P   %)417!H>7-%;F<O16YG:6YE7S$*+V9I;'1E<E]O=70 #@   %     &"
+    "    \"     0         !0    @    !    &0    $         $    !D   !%;F=I;F5?,7PO9FEL=&5R7V]U=\"]/=70Q          X    X"
+    "    !@    @    &          4    (     0    $    !          D    (            \\#\\.    .     8    (    !          %"
+    "    \"     $    '     0         0    !P   &1E8VEM86P #@   $@    &    \"     8         !0    @    !     P    $     "
+    "    \"0   !@                      - _        \\#\\.    0     8    (    !          %    \"     $    /     0        "
+    " 0    #P   '1W;W,M8V]M<&QE;65N=  .    .     8    (    !          %    \"     $    %     0         0    !0   &QO9VE"
+    "C    #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            00 X    X    !@    @    "
+    "&          4    (     0    $    !          D    (            ^+\\.    .     8    (    !@         %    \"     $    "
+    "!     0         )    \"            / _#@   #@    &    \"     8         !0    @    !     0    $         \"0    @   "
+    "            X    X    !@    @    &          4    (     0    $    !          D    (        8 \"$IT .    6     8    "
+    "(    !          %    \"     $    C     0         0    (P   %)417!H>7-%;F<O16YG:6YE7S$*+U-H87)E9\"!-96UO<GDQ       "
+    ".    0     8    (    !          %    \"     $    /     0         0    #P   $1A=&$@365M;W)Y(&]U=  .    .     8    ("
+    "    !@         %    \"     $    !     0         )    \"            / _#@   #@    &    \"     0         !0    @    "
+    "!    !P    $         $     <   !D96-I;6%L  X   !(    !@    @    &          4    (     0    ,    !          D    8 "
+    "                     #@/P       / _#@   $     &    \"     0         !0    @    !    #P    $         $     \\   !T="
+    "V]S+6-O;7!L96UE;G0 #@   #@    &    \"     0         !0    @    !    !0    $         $     4   !L;V=I8P    X    X  "
+    "  !@    @    &          4    (     0    $    !          D    (            $$ .    .     8    (    !@         %    "
+    "\"     $    !     0         )    \"             C #@   #@    &    \"     8         !0    @    !     0    $        "
+    " \"0    @           #P/PX    X    !@    @    &          4    (     0    $    !          D    (               .    "
+    ".     8    (    !@         %    \"     $    !     0         )    \"        &  LJ= #@   %     &    \"     0        "
+    " !0    @    !    'P    $         $    !\\   !25$5P:'ES16YG+T5N9VEN95\\Q\"B]A8V-?;&%T8V@*  X   !0    !@    @    $  "
+    "        4    (     0   !D    !         !     9    16YG:6YE7S%\\+V%C8U]L871C:'PO3W5T,0         .    .     8    (   "
+    " !@         %    \"     $    !     0         )    \"            / _#@   #@    &    \"     0         !0    @    !  "
+    "  !P    $         $     <   !D96-I;6%L  X   !(    !@    @    &          4    (     0    ,    !          D    8    "
+    "                  #H/P       / _#@   $     &    \"     0         !0    @    !    #P    $         $     \\   !T=V]S"
+    "+6-O;7!L96UE;G0 #@   #@    &    \"     0         !0    @    !    !0    $         $     4   !L;V=I8P    X    X    !"
+    "@    @    &          4    (     0    $    !          D    (            $$ .    .     8    (    !@         %    \" "
+    "    $    !     0         )    \"            !+ #@   #@    &    \"     8         !0    @    !     0    $         \""
+    "0    @           #P/PX    X    !@    @    &          4    (     0    $    !          D    (               .    .  "
+    "   8    (    !@         %    \"     $    !     0         )    \"               #@         .          X         #@ "
+    "  #@    &    \"     0         !0    @    !    !P    $         $     <   !D96-I;6%L  X   !(    !@    @    &        "
+    "  4    (     0    ,    !          D    8            \\#\\       #P/P          #@   $     &    \"     0         !0 "
+    "   @    !    #P    $         $     \\   !T=V]S+6-O;7!L96UE;G0 #@   #     &    \"     0         !0    @    !    !  "
+    "   $         $  $ '1I;64.    .     8    (    !@         %    \"     $    !     0         )    \"            !! #@ "
+    "  #@    &    \"     8         !0    @    !     0    $         \"0    @            8P X    X    !@    @    &       "
+    "   4    (     0    $    !          D    (            \\#\\.          X    X    !@    @    &          4    (     0 "
+    "   $    !          D    (            \"$ .    .     8    (    !@         %    \"     $    !     0         )    \" "
+    "            A #@   #@    &    \"     8         !0    @    !     0    $         \"0    @        P \"ZW0 X   !0    !"
+    "@    @    &          4    (     0    0    !          D    @            >4        !50       N(Y       # >T .    0  "
+    "   8    (    !@         %    \"     $    \"     0         )    $            )E        @C$ .    0     8    (    !@ "
+    "        %    \"     $    \"     0         )    $                    %!J\"$$.    0     8    (    !@         %    \""
+    "     $    \"     0         )    $                       \\'\\.    .     8    (    !@         %    \"     $    !   "
+    "  0         )    \"         !0:@A!#@   #@    &    \"     8         !0    @    !     0    $         \"0    @       "
+    "        X   !P    !@    @    &          4    (     @    0    !          D   !             X+\\       #XOP        #"
+    "         \",         ,P        !+         %,         8P X    X    !@    @    &          4    (     0    $    !    "
+    "      D    (         $\"(TT .    .     8    (    !@         %    \"     $    !     0         )    \"              "
+    " #@   $@    &    \"     8         !0    @    !     P    $         \"0   !@    ZC##BCGE%/CJ,,.*.>44^.HPPXHYY13X.   "
+    " ,     8    (    !@         %    \"                0         )          X    P    !@    @    $          4    (    "
+    " 0    ,    !         !   P!O9F8 #@   #     &    \"     0         !0    @    !     @    $         $  \" &]N   .    "
+    ",     8    (    !          %    \"     $    \"     0         0  ( ;VX   X    X    !@    @    &          4    (    "
+    " 0    $    !          D    (            %$ .    ,     8    (    !          %    \"     $    $     0         0  0 3"
+    "D].10X    P    !@    @    $          4    (     0    0    !         !  ! !$3TY%#@   '@    &    \"     $         !0"
+    "    @    !     0    $         #@   $@    &    \"     0         !0    @    !    $P    $         $    !,   !4:6UE(&E"
+    "N(&YA;F]S96-O;F1S       .    .     8    (    !@         %    \"     $    !     0         )    \"               #@ "
+    "  #@    &    \"     8         !0    @    !     0    $         \"0    @             0 X    X    !@    @    &       "
+    "   4    (     0    $    !          D    (    .HPPXHYY13X.    .     8    (    !@         %    \"     $    !     0  "
+    "       )    \"    \"U#'.OB-BH_#@   #@    &    \"     8         !0    @    !     0    $         \"0    @           "
+    "    X    X    !@    @    &          4    (     0    $    !          D    (            &L .    .     8    (    !   "
+    "       %    \"     $    '     0         0    !P   %-405)4140 "
   }
 }
