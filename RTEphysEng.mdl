@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.72"
+    ComputedModelVersion    "1.73"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -63,21 +63,21 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1457.0, 657.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [2807.5, 976.0]
+	  Offset		  [2897.5, 1233.0]
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "160"
 	  Extents		  [1457.0, 657.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [937.0, 648.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [-31.500000000002672, 480.75000000000216]
 	}
 	PropName		"EditorsInfo"
       }
@@ -89,9 +89,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "pdw"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Feb 12 13:25:51 2015"
-  RTWModifiedTimeStamp	  345384750
-  ModelVersionFormat	  "1.%<AutoIncrement:72>"
+  LastModifiedDate	  "Thu Feb 26 10:58:53 2015"
+  RTWModifiedTimeStamp	  346848838
+  ModelVersionFormat	  "1.%<AutoIncrement:73>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -865,7 +865,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "227"
+    SIDHighWatermark	    "233"
     Block {
       BlockType		      Reference
       Name		      " System Generator"
@@ -1272,7 +1272,7 @@ Model {
       Name		      "Constant2"
       SID		      "217"
       Ports		      [0, 1]
-      Position		      [3835, 1527, 3890, 1553]
+      Position		      [3955, 1737, 4010, 1763]
       ZOrder		      205
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Constant"
@@ -1347,7 +1347,7 @@ Model {
       Name		      "Convert"
       SID		      "213"
       Ports		      [1, 1]
-      Position		      [3690, 1355, 3735, 1385]
+      Position		      [3670, 1355, 3715, 1385]
       ZOrder		      201
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Convert"
@@ -4589,8 +4589,8 @@ Model {
       BlockType		      SubSystem
       Name		      "Engine_1\n"
       SID		      "160"
-      Ports		      [2, 2]
-      Position		      [3780, 1349, 3945, 1436]
+      Ports		      [5, 2]
+      Position		      [3870, 1338, 4030, 1682]
       ZOrder		      155
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -4613,7 +4613,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Engine_1_Reset\n"
@@ -4630,6 +4630,33 @@ Model {
 	  Position		  [20, 413, 50, 427]
 	  ZOrder		  156
 	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Template_Size"
+	  SID			  "228"
+	  Position		  [235, 693, 265, 707]
+	  ZOrder		  160
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Filter_Length"
+	  SID			  "229"
+	  Position		  [240, 833, 270, 847]
+	  ZOrder		  161
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Decimation"
+	  SID			  "230"
+	  Position		  [240, 998, 270, 1012]
+	  ZOrder		  162
+	  Port			  "5"
 	  IconDisplay		  "Port number"
 	}
 	Block {
@@ -5301,114 +5328,6 @@ Model {
 	  "bel('output',10,'start_add_cntr_en');\ncolor('black');port_label('output',11,'sample_skip_cntr_en');\ncolor('black'"
 	  ");port_label('output',12,'sample_skip_cntr_ld');\ncolor('black');port_label('output',13,'latch_temp_accum');\ncolor"
 	  "('black');disp('\\bf{cnt\\_state\\_machine}','texmode','on');\nfprintf('','COMMENT: end icon text');"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "From Register"
-	  SID			  "125"
-	  Ports			  [0, 1]
-	  Position		  [235, 684, 300, 716]
-	  ZOrder		  116
-	  AttributesFormatString  "<< %<shared_memory_name> >>"
-	  LibraryVersion	  "1.2"
-	  SourceBlock		  "xbsIndex_r4/From Register"
-	  SourceType		  "Xilinx Shared Memory Based From Register Block"
-	  infoedit		  "Register block that reads data to a shared memory register.  Delay of one sample period."
-	  shared_memory_name	  "'E1_template_size'"
-	  init			  "50"
-	  period		  "1"
-	  ownership		  "Locally owned and initialized"
-	  gui_display_data_type	  "Fixed-point"
-	  arith_type		  "Unsigned"
-	  n_bits		  "16"
-	  bin_pt		  "0"
-	  preci_type		  "Single"
-	  dbl_ovrd		  off
-	  xl_use_area		  off
-	  xl_area		  "[0,0,0,0,0,0,0]"
-	  has_advanced_control	  "0"
-	  sggui_pos		  "-1,-1,-1,-1"
-	  block_type		  "fromreg"
-	  sg_icon_stat		  "65,32,0,1,white,blue,0,b27a07ff,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 65 65 0 0 ],[0 0 32 32 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 65 65 0 0 ],[0 0 32 32 0 ]);\npatch([23.1 28.88 32.88 36.88 40.88 32.88 27.1 23.1 ],[20.44 20.44 24.4"
-	  "4 20.44 24.44 24.44 24.44 20.44 ],[1 1 1 ]);\npatch([27.1 32.88 28.88 23.1 27.1 ],[16.44 16.44 20.44 20.44 16.44 ],"
-	  "[0.931 0.946 0.973 ]);\npatch([23.1 28.88 32.88 27.1 23.1 ],[12.44 12.44 16.44 16.44 12.44 ],[1 1 1 ]);\npatch([27."
-	  "1 40.88 36.88 32.88 28.88 23.1 27.1 ],[8.44 8.44 12.44 8.44 12.44 12.44 8.44 ],[0.931 0.946 0.973 ]);\nfprintf('','"
-	  "COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('output',1,'dout'"
-	  ");\nfprintf('','COMMENT: end icon text');"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "From Register1"
-	  SID			  "126"
-	  Ports			  [0, 1]
-	  Position		  [235, 824, 295, 856]
-	  ZOrder		  124
-	  AttributesFormatString  "<< %<shared_memory_name> >>"
-	  LibraryVersion	  "1.2"
-	  SourceBlock		  "xbsIndex_r4/From Register"
-	  SourceType		  "Xilinx Shared Memory Based From Register Block"
-	  infoedit		  "Register block that reads data to a shared memory register.  Delay of one sample period."
-	  shared_memory_name	  "'E1_filter_length'"
-	  init			  "48"
-	  period		  "1"
-	  ownership		  "Locally owned and initialized"
-	  gui_display_data_type	  "Fixed-point"
-	  arith_type		  "Unsigned"
-	  n_bits		  "16"
-	  bin_pt		  "0"
-	  preci_type		  "Single"
-	  dbl_ovrd		  off
-	  xl_use_area		  off
-	  xl_area		  "[0,0,0,0,0,0,0]"
-	  has_advanced_control	  "0"
-	  sggui_pos		  "-1,-1,-1,-1"
-	  block_type		  "fromreg"
-	  sg_icon_stat		  "60,32,0,1,white,blue,0,b27a07ff,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 32 32 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 60 60 0 0 ],[0 0 32 32 0 ]);\npatch([21.1 26.88 30.88 34.88 38.88 30.88 25.1 21.1 ],[20.44 20.44 24.4"
-	  "4 20.44 24.44 24.44 24.44 20.44 ],[1 1 1 ]);\npatch([25.1 30.88 26.88 21.1 25.1 ],[16.44 16.44 20.44 20.44 16.44 ],"
-	  "[0.931 0.946 0.973 ]);\npatch([21.1 26.88 30.88 25.1 21.1 ],[12.44 12.44 16.44 16.44 12.44 ],[1 1 1 ]);\npatch([25."
-	  "1 38.88 34.88 30.88 26.88 21.1 25.1 ],[8.44 8.44 12.44 8.44 12.44 12.44 8.44 ],[0.931 0.946 0.973 ]);\nfprintf('','"
-	  "COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('output',1,'dout'"
-	  ");\nfprintf('','COMMENT: end icon text');"
-	}
-	Block {
-	  BlockType		  Reference
-	  Name			  "From Register2"
-	  SID			  "127"
-	  Ports			  [0, 1]
-	  Position		  [235, 1029, 295, 1061]
-	  ZOrder		  139
-	  AttributesFormatString  "<< %<shared_memory_name> >>"
-	  LibraryVersion	  "1.2"
-	  SourceBlock		  "xbsIndex_r4/From Register"
-	  SourceType		  "Xilinx Shared Memory Based From Register Block"
-	  infoedit		  "Register block that reads data to a shared memory register.  Delay of one sample period."
-	  shared_memory_name	  "'E1_samples_to_skip'"
-	  init			  "0"
-	  period		  "1"
-	  ownership		  "Locally owned and initialized"
-	  gui_display_data_type	  "Fixed-point"
-	  arith_type		  "Unsigned"
-	  n_bits		  "8"
-	  bin_pt		  "0"
-	  preci_type		  "Single"
-	  dbl_ovrd		  off
-	  xl_use_area		  off
-	  xl_area		  "[0,0,0,0,0,0,0]"
-	  has_advanced_control	  "0"
-	  sggui_pos		  "-1,-1,-1,-1"
-	  block_type		  "fromreg"
-	  sg_icon_stat		  "60,32,0,1,white,blue,0,b27a07ff,right,,[ ],[ ]"
-	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 32 32 0 ],[0.77 0.82 0.91"
-	  " ]);\nplot([0 60 60 0 0 ],[0 0 32 32 0 ]);\npatch([21.1 26.88 30.88 34.88 38.88 30.88 25.1 21.1 ],[20.44 20.44 24.4"
-	  "4 20.44 24.44 24.44 24.44 20.44 ],[1 1 1 ]);\npatch([25.1 30.88 26.88 21.1 25.1 ],[16.44 16.44 20.44 20.44 16.44 ],"
-	  "[0.931 0.946 0.973 ]);\npatch([21.1 26.88 30.88 25.1 21.1 ],[12.44 12.44 16.44 16.44 12.44 ],[1 1 1 ]);\npatch([25."
-	  "1 38.88 34.88 30.88 26.88 21.1 25.1 ],[8.44 8.44 12.44 8.44 12.44 12.44 8.44 ],[0.931 0.946 0.973 ]);\nfprintf('','"
-	  "COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('output',1,'dout'"
-	  ");\nfprintf('','COMMENT: end icon text');"
 	}
 	Block {
 	  BlockType		  Reference
@@ -6557,7 +6476,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "From Register"
+	  SrcBlock		  "Template_Size"
 	  SrcPort		  1
 	  DstBlock		  "Up Sample1"
 	  DstPort		  1
@@ -6695,9 +6614,9 @@ Model {
 	  DstPort		  7
 	}
 	Line {
-	  SrcBlock		  "From Register2"
+	  SrcBlock		  "Decimation"
 	  SrcPort		  1
-	  Points		  [57, 0; 0, 231; 775, 0; 0, -196]
+	  Points		  [104, 0; 0, 260; 767, 0; 0, -185]
 	  DstBlock		  "Up Sample4"
 	  DstPort		  1
 	}
@@ -6778,7 +6697,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "From Register1"
+	  SrcBlock		  "Filter_Length"
 	  SrcPort		  1
 	  DstBlock		  "Up Sample2"
 	  DstPort		  1
@@ -6957,6 +6876,114 @@ Model {
       SourceType	      "Xilinx Shared Memory Based From Register Block"
       infoedit		      "Register block that reads data to a shared memory register.  Delay of one sample period."
       shared_memory_name      "'ESP_Contol_Reg'"
+      init		      "0"
+      period		      "1"
+      ownership		      "Locally owned and initialized"
+      gui_display_data_type   "Fixed-point"
+      arith_type	      "Unsigned"
+      n_bits		      "16"
+      bin_pt		      "0"
+      preci_type	      "Single"
+      dbl_ovrd		      off
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      has_advanced_control    "0"
+      sggui_pos		      "-1,-1,-1,-1"
+      block_type	      "fromreg"
+      sg_icon_stat	      "60,56,0,1,white,blue,0,b27a07ff,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0."
+      "82 0.91 ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 "
+      "36.88 44.88 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 3"
+      "6.88 28.88 ],[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1"
+      " ]);\npatch([20.2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 "
+      "0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');po"
+      "rt_label('output',1,'dout');\nfprintf('','COMMENT: end icon text');"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "From Register1"
+      SID		      "231"
+      Ports		      [0, 1]
+      Position		      [3660, 1432, 3720, 1488]
+      ZOrder		      213
+      AttributesFormatString  "<< %<shared_memory_name> >>"
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/From Register"
+      SourceType	      "Xilinx Shared Memory Based From Register Block"
+      infoedit		      "Register block that reads data to a shared memory register.  Delay of one sample period."
+      shared_memory_name      "'E1_Template_Size'"
+      init		      "0"
+      period		      "1"
+      ownership		      "Locally owned and initialized"
+      gui_display_data_type   "Fixed-point"
+      arith_type	      "Unsigned"
+      n_bits		      "16"
+      bin_pt		      "0"
+      preci_type	      "Single"
+      dbl_ovrd		      off
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      has_advanced_control    "0"
+      sggui_pos		      "-1,-1,-1,-1"
+      block_type	      "fromreg"
+      sg_icon_stat	      "60,56,0,1,white,blue,0,b27a07ff,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0."
+      "82 0.91 ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 "
+      "36.88 44.88 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 3"
+      "6.88 28.88 ],[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1"
+      " ]);\npatch([20.2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 "
+      "0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');po"
+      "rt_label('output',1,'dout');\nfprintf('','COMMENT: end icon text');"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "From Register2"
+      SID		      "232"
+      Ports		      [0, 1]
+      Position		      [3660, 1527, 3720, 1583]
+      ZOrder		      214
+      AttributesFormatString  "<< %<shared_memory_name> >>"
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/From Register"
+      SourceType	      "Xilinx Shared Memory Based From Register Block"
+      infoedit		      "Register block that reads data to a shared memory register.  Delay of one sample period."
+      shared_memory_name      "'E1_Filter_Length'"
+      init		      "0"
+      period		      "1"
+      ownership		      "Locally owned and initialized"
+      gui_display_data_type   "Fixed-point"
+      arith_type	      "Unsigned"
+      n_bits		      "16"
+      bin_pt		      "0"
+      preci_type	      "Single"
+      dbl_ovrd		      off
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      has_advanced_control    "0"
+      sggui_pos		      "-1,-1,-1,-1"
+      block_type	      "fromreg"
+      sg_icon_stat	      "60,56,0,1,white,blue,0,b27a07ff,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0."
+      "82 0.91 ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 "
+      "36.88 44.88 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 3"
+      "6.88 28.88 ],[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1"
+      " ]);\npatch([20.2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 "
+      "0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');po"
+      "rt_label('output',1,'dout');\nfprintf('','COMMENT: end icon text');"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "From Register3"
+      SID		      "233"
+      Ports		      [0, 1]
+      Position		      [3660, 1622, 3720, 1678]
+      ZOrder		      215
+      AttributesFormatString  "<< %<shared_memory_name> >>"
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/From Register"
+      SourceType	      "Xilinx Shared Memory Based From Register Block"
+      infoedit		      "Register block that reads data to a shared memory register.  Delay of one sample period."
+      shared_memory_name      "'E1_Decimation'"
       init		      "0"
       period		      "1"
       ownership		      "Locally owned and initialized"
@@ -7165,14 +7192,14 @@ Model {
       BlockType		      Terminator
       Name		      "Terminator12"
       SID		      "218"
-      Position		      [4195, 1385, 4215, 1405]
+      Position		      [4250, 1465, 4270, 1485]
       ZOrder		      206
     }
     Block {
       BlockType		      Terminator
       Name		      "Terminator13"
       SID		      "223"
-      Position		      [4195, 1520, 4215, 1540]
+      Position		      [4250, 1590, 4270, 1610]
       ZOrder		      209
     }
     Block {
@@ -7273,7 +7300,7 @@ Model {
       Name		      "To Register1"
       SID		      "219"
       Ports		      [2, 1]
-      Position		      [4035, 1365, 4095, 1420]
+      Position		      [4125, 1445, 4185, 1500]
       ZOrder		      204
       AttributesFormatString  "<< %<shared_memory_name> >>"
       LibraryVersion	      "1.2"
@@ -7310,7 +7337,7 @@ Model {
       Name		      "To Register2"
       SID		      "224"
       Ports		      [2, 1]
-      Position		      [4035, 1500, 4095, 1555]
+      Position		      [4125, 1570, 4185, 1625]
       ZOrder		      207
       AttributesFormatString  "<< %<shared_memory_name> >>"
       LibraryVersion	      "1.2"
@@ -7855,7 +7882,7 @@ Model {
       SrcPort		      1
       Points		      [25, 0]
       Branch {
-	Points			[0, 43; 375, 0]
+	Points			[0, 42; 420, 0; 0, 28]
 	DstBlock		"Engine_1\n"
 	DstPort			2
       }
@@ -8023,7 +8050,7 @@ Model {
     Line {
       SrcBlock		      "Engine_1\n"
       SrcPort		      1
-      Points		      [40, 0; 0, 10]
+      Points		      [42, 0; 0, 35]
       DstBlock		      "To Register1"
       DstPort		      1
     }
@@ -8036,9 +8063,9 @@ Model {
     Line {
       SrcBlock		      "Constant2"
       SrcPort		      1
-      Points		      [91, 0]
+      Points		      [61, 0; 0, -140]
       Branch {
-	Points			[0, -135]
+	Points			[0, -125]
 	DstBlock		"To Register1"
 	DstPort			2
       }
@@ -8056,9 +8083,29 @@ Model {
     Line {
       SrcBlock		      "Engine_1\n"
       SrcPort		      2
-      Points		      [17, 0; 0, 100]
+      Points		      [18, 0; 0, -10]
       DstBlock		      "To Register2"
       DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From Register1"
+      SrcPort		      1
+      Points		      [70, 0; 0, 50]
+      DstBlock		      "Engine_1\n"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "From Register2"
+      SrcPort		      1
+      Points		      [70, 0; 0, 25]
+      DstBlock		      "Engine_1\n"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "From Register3"
+      SrcPort		      1
+      DstBlock		      "Engine_1\n"
+      DstPort		      5
     }
   }
 }
